@@ -1,0 +1,856 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f7f8"><title>Racismo epistêmico e computação | Seminário</title><style>
+:root{--ink:#17263b;--muted:#52647a;--paper:#fff;--soft:#f4f7fa;--border:#dce5ec;--teal:#006d75;--blue:#2455a0;--gold:#b87414;--coral:#ba493f}*{box-sizing:border-box}body{margin:0;background:#e9eff4;color:var(--ink);font-family:Arial,'Segoe UI',system-ui,sans-serif}button{font:inherit;cursor:pointer}.toolbar{height:60px;background:#fff;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 22px;gap:12px}.brand{font-weight:800;font-size:16px;letter-spacing:-.02em}.brand span{color:var(--teal)}.buttons{display:flex;gap:8px}.btn{background:#fff;border:1px solid #cbd7e1;color:#24374b;border-radius:9px;padding:9px 12px;font-size:13px;font-weight:750}.btn:hover{background:#eaf2f5}.btn.primary{background:var(--teal);color:#fff;border-color:var(--teal)}.viewport{display:grid;place-items:center;padding:14px 15px 6px;min-height:calc(100vh - 123px)}.slide{width:min(95vw,calc((100vh - 150px) * 16 / 9),1440px);aspect-ratio:16/9;background:var(--paper);border:1px solid #d6e1e9;box-shadow:0 15px 55px #26445b22;border-radius:7px;padding:clamp(27px,3.8vw,58px) clamp(34px,4.6vw,74px) clamp(25px,3vw,44px);position:relative;overflow:hidden;display:flex;flex-direction:column}.slide:before{content:"";position:absolute;inset:0 auto 0 0;width:9px;background:var(--teal)}.section2:before{background:#26559a}.section3:before{background:#c07519}.section4:before{background:#944f60}.meta{display:flex;justify-content:space-between;align-items:center;font-size:clamp(10px,.86vw,13px);color:var(--teal);text-transform:uppercase;font-weight:850;letter-spacing:.15em;margin-bottom:clamp(13px,1.5vw,22px)}.section2 .meta{color:#26559a}.section3 .meta{color:#a66a14}.section4 .meta{color:#944f60}h1{font-size:clamp(29px,3.15vw,52px);line-height:1.08;letter-spacing:-.047em;max-width:1130px;margin:0 0 clamp(16px,1.8vw,26px)}.visual{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.footer{height:28px;border-top:1px solid var(--border);display:flex;align-items:end;justify-content:space-between;margin-top:clamp(12px,1.4vw,20px);font-size:clamp(10px,.83vw,13px);color:#718397}.footer span:nth-child(2){font-weight:750}.cover{background:linear-gradient(125deg,#f0fbfb 0%,#fff 55%,#f3f7fe 100%)}.cover h1{font-size:clamp(43px,5.2vw,83px);line-height:1.03;max-width:1050px}.cover-sub{font-size:clamp(18px,1.95vw,30px);max-width:860px;color:#455a70;line-height:1.32}.kicker-pill{display:inline-flex;align-items:center;background:#d7f1ef;color:#005d67;padding:10px 18px;border-radius:30px;font-weight:800;font-size:15px;margin-bottom:23px;width:max-content}.cover-line{font-weight:750;color:var(--blue);font-size:16px;margin-top:24px}.cards{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:clamp(11px,1.5vw,22px);height:100%;align-items:stretch}.card{border:2px solid #dfe9f0;background:#f7fafc;border-radius:17px;padding:clamp(13px,1.9vw,28px);display:flex;flex-direction:column;gap:clamp(9px,1vw,17px);justify-content:center}.card .num{font-size:clamp(20px,2.4vw,36px);font-weight:850;color:var(--teal)}.card h2{font-size:clamp(18px,1.75vw,27px);line-height:1.18;margin:0;letter-spacing:-.035em}.card p{font-size:clamp(14px,1.38vw,21px);line-height:1.38;color:#4c5e70;margin:0}.questionBox{height:100%;background:#e9f7f5;border-radius:20px;padding:clamp(25px,4vw,62px);display:flex;flex-direction:column;justify-content:center;gap:25px}.questionBox strong{font-size:clamp(30px,3.7vw,60px);letter-spacing:-.052em;line-height:1.18;max-width:1020px}.smallNote{font-size:clamp(14px,1.3vw,21px);color:#496170}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;position:relative}.timeBlock{border-top:7px solid var(--teal);padding:24px 12px 18px;background:#f4f8fa;border-radius:8px;min-height:230px}.timeBlock .time{color:var(--blue);font-size:clamp(20px,2.2vw,35px);font-weight:850}.timeBlock h3{margin:13px 0;font-size:clamp(18px,1.75vw,27px)}.timeBlock p{font-size:clamp(14px,1.28vw,20px);color:#526276;line-height:1.35}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.side{padding:clamp(21px,2.3vw,35px);border-radius:17px;background:#eef5f9;border:2px solid #dce8ef}.side:nth-child(2){background:#fff4e7;border-color:#f4e4d1}.side h3{font-size:clamp(20px,2.05vw,32px);margin:0 0 18px}.side p{font-size:clamp(17px,1.7vw,26px);line-height:1.42;margin:0}.under{font-weight:800;text-align:center;color:#3e6370;margin-top:24px;font-size:clamp(14px,1.35vw,20px)}.definition{display:grid;grid-template-columns:1.2fr 1fr;gap:25px}.defBig{background:#e8f7f3;border-radius:18px;padding:35px;display:flex;flex-direction:column;justify-content:center}.defBig strong{font-size:clamp(19px,1.8vw,29px);color:#00717a;margin-bottom:16px}.defBig p{font-size:clamp(24px,2.3vw,37px);line-height:1.25;font-weight:760;margin:0;letter-spacing:-.035em}.defExamples{display:grid;gap:12px}.defExamples p{background:#f3f6f9;border-radius:13px;padding:21px;font-weight:750;font-size:clamp(16px,1.5vw,24px);margin:0}.statement{display:flex;flex-direction:column;justify-content:center;border-left:8px solid var(--teal);padding-left:clamp(25px,3.5vw,56px);height:100%}.statement strong{font-size:clamp(30px,3.4vw,54px);line-height:1.19;letter-spacing:-.05em}.statement p{font-size:clamp(16px,1.5vw,23px);color:#526579;line-height:1.4}.flow{display:flex;align-items:stretch;gap:8px}.flowStep{flex:1;background:#ecf6f6;border:2px solid #d4e9e8;border-radius:15px;padding:clamp(13px,1.6vw,25px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:13px}.flowStep h3{font-size:clamp(18px,1.8vw,28px);margin:0}.flowStep p{font-size:clamp(13px,1.24vw,19px);line-height:1.35;margin:0;color:#526779}.arrow{font-size:clamp(20px,2.1vw,35px);font-weight:900;color:var(--teal);align-self:center}.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px}.comp{border:2px solid #dbe5ed;border-radius:17px;padding:clamp(20px,2.3vw,35px);background:#f7fafc;display:flex;flex-direction:column;justify-content:space-between}.comp:nth-child(2){background:#ebf8f5;border-color:#bfe0dc}.comp h3{font-size:clamp(21px,2.05vw,32px);margin:0 0 16px}.comp p{font-size:clamp(17px,1.65vw,25px);line-height:1.42;margin:0}.comp small{font-size:clamp(15px,1.25vw,19px);font-weight:850;color:#006d75;display:block;margin-top:24px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border:2px solid #d9e5eb;background:#f7fafc;border-radius:15px;padding:clamp(12px,1.5vw,23px)}.step span{display:grid;place-items:center;background:var(--teal);color:white;width:42px;height:42px;border-radius:11px;font-size:22px;font-weight:850;margin-bottom:16px}.step h3{margin:0 0 12px;font-size:clamp(18px,1.7vw,27px)}.step p{font-size:clamp(14px,1.35vw,20px);line-height:1.38;color:#526477;margin:0}.stepsFooter{margin-top:22px;font-size:clamp(14px,1.5vw,23px);font-weight:750;color:var(--teal);text-align:center}.scenario{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;align-items:stretch}.scenarioLabel{background:#fdf0db;border-radius:17px;padding:25px;display:flex;flex-direction:column;justify-content:center}.scenarioLabel small{font-size:16px;color:#876019;text-transform:uppercase;letter-spacing:.13em;font-weight:800}.scenarioLabel strong{font-size:clamp(24px,2.8vw,45px);line-height:1.16;margin-top:15px}.scenarioBody{display:flex;flex-direction:column;gap:17px}.scenarioBody p{margin:0;background:#f5f8fa;border-radius:15px;padding:23px;font-size:clamp(17px,1.72vw,27px);line-height:1.35}.scenarioBody p:nth-child(2){background:#e7f4f1;border-left:6px solid var(--teal)}.barTitle{font-size:clamp(13px,1.3vw,19px);color:#677789;margin-bottom:19px}.barPlot{display:flex;flex-direction:column;gap:clamp(22px,3vw,48px)}.barLine{display:grid;grid-template-columns:32% 1fr 80px;align-items:center;gap:20px}.barLabel{font-size:clamp(17px,1.7vw,26px);line-height:1.2;font-weight:760}.barTrack{height:clamp(28px,3.5vw,54px);background:#e5edf1;border-radius:7px;overflow:hidden}.barFill{background:#006d75;height:100%;border-radius:7px}.barLine:nth-child(2) .barFill{background:#bd731c}.barNum{font-size:clamp(24px,2.25vw,36px);font-weight:850;color:#182a39}.barLegend{font-size:clamp(13px,1.13vw,17px);color:#54677a;margin-top:28px}.matrix{display:grid;grid-template-columns:1fr 1fr;gap:18px}.matrixCell{padding:clamp(20px,2vw,31px);border-radius:14px;background:#e8f5f2;border:2px solid #c8e4dc}.matrixCell:nth-child(2),.matrixCell:nth-child(3){background:#fff0e6;border-color:#f2dac7}.matrixCell b{font-size:clamp(19px,2.1vw,33px);display:block;margin-bottom:12px}.matrixCell p{font-size:clamp(15px,1.5vw,23px);line-height:1.35;margin:0}.bigFact{display:grid;grid-template-columns:43% 1fr;gap:25px;align-items:center;height:100%}.factStat{border-radius:20px;background:#eaf6f4;padding:25px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;height:100%}.factStat strong{font-size:clamp(70px,9vw,144px);letter-spacing:-.08em;line-height:1;color:var(--teal)}.factStat span{font-size:clamp(17px,1.6vw,25px);font-weight:760;line-height:1.28;margin-top:14px}.factText{display:flex;flex-direction:column;justify-content:center;gap:23px}.factText p{font-size:clamp(23px,2.2vw,35px);line-height:1.32;margin:0}.factText b{font-size:clamp(14px,1.1vw,18px);background:#fff2df;color:#865100;border-radius:9px;padding:12px;align-self:start}.refs{display:grid;grid-template-columns:1fr 1fr;gap:13px}.refs a{text-decoration:none;background:#f1f7fa;border:1px solid #dde7ee;color:#17577b;border-radius:9px;padding:17px;font-weight:800;font-size:clamp(13px,1.1vw,17px)}.source{position:absolute;bottom:clamp(50px,5vw,73px);left:clamp(34px,4.6vw,74px);font-size:clamp(10px,.8vw,13px);color:#667e91}.source a{color:#20618a;text-decoration:none}.footer .small{white-space:nowrap}.bottom{max-width:1440px;margin:0 auto;padding:7px 20px 13px;display:flex;align-items:center;gap:12px}.pager{font-size:13px;color:#51667b;font-weight:800;white-space:nowrap}.meter{height:5px;background:#c6d4df;flex:1;border-radius:12px;overflow:hidden}.meter div{background:#007680;height:100%;transition:width .2s}.speaker{white-space:nowrap;font-weight:700;color:#53657a;font-size:12px}.notes{width:min(95vw,1100px);margin:12px auto 35px;padding:25px;background:#fff;border:1px solid var(--border);border-radius:14px;display:none;box-shadow:0 8px 18px #33445512}.notes.show{display:block}.notes h2{margin:0 0 10px;font-size:20px}.notes p{font-size:18px;line-height:1.55;margin:0}.notes .warning{font-size:13px;color:#697b8e;margin-top:12px}.overview{display:none;max-width:1350px;margin:20px auto;padding:0 20px 50px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.overview button{text-align:left;border:1px solid #c7d7e1;border-radius:10px;padding:17px;min-height:105px;background:white;color:#17263b}.overview button small{display:block;color:#00717a;font-weight:850;margin-bottom:12px}.overview button strong{font-size:16px}.overviewMode .viewport,.overviewMode .bottom,.overviewMode .notes{display:none}.overviewMode .overview{display:grid}.noScroll .viewport{overflow:visible}.slide *{min-width:0}.source+ .footer{margin-top:20px}@media(max-width:840px){.toolbar{height:auto;padding:12px;flex-direction:column;align-items:stretch}.buttons{flex-wrap:wrap}.viewport{min-height:unset}.slide{width:96vw;aspect-ratio:16/10;min-height:520px;padding:25px}.slide h1{font-size:27px}.visual{overflow:auto}.meta{font-size:10px}.cards{grid-template-columns:1fr 1fr}.flowStep p{font-size:12px}.definition,.bigFact{grid-template-columns:1fr 1fr}.side p,.comp p{font-size:16px}.source{display:none}.bottom{flex-wrap:wrap}.speaker{display:none}}@media(max-width:560px){.slide{aspect-ratio:auto;min-height:620px}.cards,.timeline,.split,.definition,.compare,.bigFact,.scenario,.refs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.flow{flex-direction:column}.arrow{transform:rotate(90deg)}.questionBox strong{font-size:30px}.statement strong{font-size:29px}.barLine{grid-template-columns:35% 1fr 45px;gap:8px}.barLabel{font-size:13px}.barNum{font-size:18px}}@media print{@page{size:landscape;margin:0}body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.toolbar,.bottom,.notes,.overview{display:none!important}.viewport{display:block;min-height:0;padding:0}.slide{width:100vw;height:100vh;aspect-ratio:16/9;border:0;border-radius:0;box-shadow:none;break-after:page;page-break-after:always;margin:0}.slide h1{font-size:3.4vw}.slide .source{display:block}.slide .card p{font-size:1.35vw}}
+</style></head><body><div id="app"><header class="toolbar"><div class="brand"><span>◈</span> RACISMO & COMPUTAÇÃO <span style="font-weight:400;color:#748699">/ Seminário</span></div><nav class="buttons"><button class="btn" id="overviewBtn">☷ Todos os slides</button><button class="btn" id="notesBtn">▤ Notas do apresentador</button><button class="btn" id="printBtn">⎙ Salvar PDF</button><button class="btn" id="fullBtn">⛶ Tela cheia</button></nav></header><div class="viewport"><main class="slide" id="slide" aria-live="polite"></main></div><div class="bottom"><button class="btn" id="prevBtn">← Anterior</button><div class="meter"><div id="meter"></div></div><span class="pager" id="pager"></span><span class="speaker" id="speaker"></span><button class="btn primary" id="nextBtn">Próximo →</button></div><aside id="notes" class="notes"><h2>Notas do apresentador · não aparecem no slide</h2><p id="noteText"></p><div class="warning">Dica: use estas notas apenas para preparar a fala. Para projetar, abra a apresentação em tela cheia.</div></aside><div class="overview" id="overview"></div></div>
+<script id="slideData" type="application/json">[
+  {
+    "section": 1,
+    "title": "Racismo epistêmico e computação",
+    "kicker": "Seminário • história, sociedade e tecnologia",
+    "kind": "cover",
+    "data": {
+      "subtitle": "Como escolhas humanas e desigualdades históricas podem aparecer nos sistemas digitais",
+      "line": "4 integrantes · 40–50 minutos"
+    },
+    "note": "Abrir questionando a ideia de que tecnologia seria neutra. Apresentar o recorte: produção do conhecimento, funcionamento dos algoritmos, evidências de discriminação e responsabilidades.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Uma pergunta para começar",
+    "kicker": "O problema central",
+    "kind": "question",
+    "data": {
+      "question": "Se um algoritmo aprende com o mundo, ele também pode aprender os preconceitos desse mundo?",
+      "small": "A pergunta guiará os quatro blocos da apresentação."
+    },
+    "note": "Não responder imediatamente. Peça que a turma pense em exemplos como sistemas de contratação, reconhecimento facial e concessão de crédito.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "O que queremos demonstrar",
+    "kicker": "Objetivos",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Entender o contexto",
+          "A computação se desenvolve em sociedades com conflitos, desigualdades e disputas por poder."
+        ],
+        [
+          "02",
+          "Investigar os mecanismos",
+          "Dados, escolhas de projeto e avaliações podem produzir resultados desiguais."
+        ],
+        [
+          "03",
+          "Analisar evidências",
+          "Casos documentados ajudam a verificar quando isso acontece."
+        ]
+      ]
+    },
+    "note": "Explicar o recorte. Não pretende dizer que todo algoritmo é racista; pretende analisar mecanismos pelos quais discriminação pode ocorrer e como identificá-los.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "A história da computação não é neutra",
+    "kicker": "Contexto histórico",
+    "kind": "timeline",
+    "data": {
+      "items": [
+        [
+          "1940–70",
+          "Computação institucional",
+          "Pesquisa militar, universidades, governos e grandes empresas."
+        ],
+        [
+          "1980–2000",
+          "Computadores e internet",
+          "Expansão do acesso, mas com desigualdades de infraestrutura."
+        ],
+        [
+          "2010–hoje",
+          "Dados e IA",
+          "Classificações e recomendações passam a mediar decisões cotidianas."
+        ]
+      ]
+    },
+    "note": "Cada etapa foi viabilizada por investimentos, contextos políticos e instituições. Evite tratar a linha do tempo como evolução automática ou igual para todas as populações.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Quem produz o conhecimento?",
+    "kicker": "Perspectiva histórica",
+    "kind": "split",
+    "data": {
+      "left": [
+        "Uma questão técnica",
+        "Quais problemas, dados e métricas entram nos sistemas?"
+      ],
+      "right": [
+        "Uma questão social",
+        "Quais pessoas participam das decisões e quais experiências são desconsideradas?"
+      ],
+      "bottom": "As escolhas tecnológicas também refletem prioridades institucionais."
+    },
+    "note": "Mostre que a pergunta sobre autoria do conhecimento não significa rejeitar a ciência. Significa investigar critérios, acesso, recursos e reconhecimento.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "O que é racismo epistêmico?",
+    "kicker": "Conceito",
+    "kind": "definition",
+    "data": {
+      "term": "Racismo epistêmico",
+      "definition": "Desvalorização, exclusão ou hierarquização racializada de pessoas e de formas de produzir conhecimento.",
+      "examples": [
+        "Quem é reconhecido como especialista?",
+        "Quais vivências são consideradas evidência?",
+        "Que perguntas sequer chegam a ser pesquisadas?"
+      ]
+    },
+    "note": "Apresente como um conceito sobre produção e legitimação do conhecimento. Ocorre quando relações raciais influenciam quem pode falar com autoridade e quais saberes são levados a sério.",
+    "source": "https://repositorio.usp.br/item/001465832"
+  },
+  {
+    "section": 1,
+    "title": "Epistemicídio: apagamento dos saberes",
+    "kicker": "Sueli Carneiro",
+    "kind": "statement",
+    "data": {
+      "main": "Não é apenas impedir alguém de participar. É também desqualificar o conhecimento que essa pessoa ou grupo produz.",
+      "detail": "A discussão sobre epistemicídio ajuda a analisar mecanismos de deslegitimação de sujeitos e saberes."
+    },
+    "note": "Mencionar Sueli Carneiro e sua tese de 2005. A formulação no slide é uma paráfrase explicativa, não uma citação literal da autora.",
+    "source": "https://repositorio.usp.br/item/001465832"
+  },
+  {
+    "section": 1,
+    "title": "Da universidade ao software",
+    "kicker": "Onde os conceitos se encontram",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Pesquisa",
+          "Quais problemas são escolhidos?"
+        ],
+        [
+          "Dados",
+          "Quem aparece nos registros?"
+        ],
+        [
+          "Projeto",
+          "Quem define as categorias?"
+        ],
+        [
+          "Avaliação",
+          "Para quem o sistema funciona?"
+        ]
+      ]
+    },
+    "note": "Demonstre a passagem entre questões epistemológicas e engenharia: o conhecimento considerado válido influencia a coleta de dados, os requisitos e as avaliações.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Exemplo: um conjunto de fotos",
+    "kicker": "Situação hipotética",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Base pouco diversa",
+        "A maioria dos rostos tem características semelhantes.",
+        "Cobertura limitada"
+      ],
+      "b": [
+        "Base avaliada por subgrupos",
+        "Desempenho analisado em populações diversas.",
+        "Limites mais visíveis"
+      ]
+    },
+    "note": "Este é um exemplo didático e hipotético. Não é uma afirmação de que diversidade de dados sozinha elimina discriminação, pois modelo, objetivo e contexto também importam.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "A ponte para os algoritmos",
+    "kicker": "Síntese do bloco 1",
+    "kind": "statement",
+    "data": {
+      "main": "Se alguns grupos participam menos da definição do problema, seus contextos podem também ser pouco considerados na solução.",
+      "detail": "Agora vamos observar como isso aparece tecnicamente em sistemas computacionais."
+    },
+    "note": "Encerrar o primeiro bloco estabelecendo uma hipótese de investigação, não uma regra universal. Passar a fala para quem explicará dados, modelos e vieses.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O que um algoritmo realmente faz?",
+    "kicker": "Fundamentos",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Entrada",
+          "Dados do mundo"
+        ],
+        [
+          "Regras ou modelo",
+          "Processamento"
+        ],
+        [
+          "Saída",
+          "Classificação ou pontuação"
+        ],
+        [
+          "Uso",
+          "Decisão humana ou automática"
+        ]
+      ]
+    },
+    "note": "Explicar algoritmo sem transformar em sinônimo de inteligência artificial. Alguns usam regras fixas, outros modelos treinados. O risco social depende também da decisão tomada a partir da saída.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Como um modelo aprende",
+    "kicker": "Aprendizado de máquina",
+    "kind": "steps",
+    "data": {
+      "items": [
+        [
+          "1",
+          "Treinar",
+          "O modelo ajusta padrões a partir de exemplos."
+        ],
+        [
+          "2",
+          "Validar",
+          "Medimos seu desempenho em dados separados."
+        ],
+        [
+          "3",
+          "Aplicar",
+          "O modelo recebe novos casos e gera previsões."
+        ]
+      ],
+      "footer": "Aprender padrões não significa compreender justiça ou contexto social."
+    },
+    "note": "Use um classificador de imagens como exemplo. Explique que a máquina não recebe automaticamente o contexto histórico dos dados e que desempenho fora do treinamento precisa ser verificado.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O que chamamos de viés?",
+    "kicker": "Conceito técnico e social",
+    "kind": "split",
+    "data": {
+      "left": [
+        "Viés estatístico",
+        "Erro sistemático, amostragem inadequada ou diferença persistente de desempenho."
+      ],
+      "right": [
+        "Viés social",
+        "Padrões de desigualdade que podem ser aprendidos e reforçados pelos sistemas."
+      ],
+      "bottom": "Os conceitos se relacionam, mas não são idênticos."
+    },
+    "note": "Diferenciar o termo técnico do uso social. Um modelo pode ser estatisticamente preciso em média e ainda apresentar danos desproporcionais a determinados grupos.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Quatro pontos em que o viés entra",
+    "kicker": "Ciclo de desenvolvimento",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Coleta",
+          "Amostra não representa bem quem será afetado."
+        ],
+        [
+          "02",
+          "Rótulos",
+          "Categorias ou decisões passadas carregam desigualdades."
+        ],
+        [
+          "03",
+          "Objetivo",
+          "A métrica otimizada ignora custos de erros para grupos."
+        ],
+        [
+          "04",
+          "Implantação",
+          "O contexto real difere do ambiente de teste."
+        ]
+      ]
+    },
+    "note": "Aponte que não existe uma única etapa culpada. Corrigir a base pode ajudar, mas também é preciso rever a pergunta, as métricas, o produto e seu uso.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Dados históricos carregam história",
+    "kicker": "Exemplo hipotético",
+    "kind": "scenario",
+    "data": {
+      "label": "Sistema para selecionar currículos",
+      "context": "Se decisões anteriores foram desiguais, os dados de contratação podem reproduzir essa desigualdade.",
+      "outcome": "O modelo pode aprender padrões do passado sem receber a ordem explícita de discriminar."
+    },
+    "note": "Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Remover “raça” resolve?",
+    "kicker": "Variáveis indiretas",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Sem variável explícita",
+        "A coluna “raça” é retirada da tabela.",
+        "Não é garantia"
+      ],
+      "b": [
+        "Outras correlações",
+        "CEP, escola ou histórico podem se relacionar a desigualdades sociais.",
+        "Auditoria necessária"
+      ]
+    },
+    "note": "Não afirmar que todo CEP é necessariamente discriminatório. Explique o conceito de proxy: uma variável pode carregar informação correlacionada a atributos protegidos.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Acurácia média pode enganar",
+    "kicker": "Uma comparação ilustrativa",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Grupo A",
+          95
+        ],
+        [
+          "Grupo B",
+          70
+        ]
+      ],
+      "legend": "Exemplo fictício: mesmo modelo, taxas de acerto diferentes por grupo.",
+      "suffix": "%"
+    },
+    "note": "Explique a diferença entre acurácia agregada e desempenho por subgrupo. Estes números são inventados para fins didáticos e não pertencem a uma pesquisa.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O erro também tem tipos",
+    "kicker": "Matriz de confusão",
+    "kind": "matrix",
+    "data": {
+      "items": [
+        [
+          "Verdadeiro positivo",
+          "Acertou ao indicar presença"
+        ],
+        [
+          "Falso positivo",
+          "Indicou presença quando não havia"
+        ],
+        [
+          "Falso negativo",
+          "Não detectou quando havia"
+        ],
+        [
+          "Verdadeiro negativo",
+          "Acertou ao indicar ausência"
+        ]
+      ]
+    },
+    "note": "Dê exemplo de identificação facial: falso positivo pode associar duas pessoas diferentes. Distinguir do falso negativo, quando o sistema deixa de reconhecer a mesma pessoa.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Reconhecer um rosto ≠ classificar gênero",
+    "kicker": "Diferenças importantes",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Classificação de gênero",
+        "Infere uma categoria a partir de uma imagem.",
+        "Tarefa de classificação"
+      ],
+      "b": [
+        "Reconhecimento facial",
+        "Verifica ou procura identidade a partir de uma face.",
+        "Tarefa de identificação"
+      ]
+    },
+    "note": "Essa distinção é fundamental para interpretar corretamente os estudos que aparecerão. Gender Shades mede classificação de gênero por imagem; NIST examina reconhecimento facial.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O teste precisa refletir o uso real",
+    "kicker": "Síntese do bloco 2",
+    "kind": "statement",
+    "data": {
+      "main": "Não basta perguntar “quantas vezes o modelo acerta?”. É preciso perguntar “onde ele erra, para quem e com qual consequência?”.",
+      "detail": "Vamos comparar essa questão com pesquisas e casos documentados."
+    },
+    "note": "Preparar o próximo integrante para apresentar evidências. Reforce que uma divergência de métricas requer interpretação, não conclusões automáticas.",
+    "source": null
+  },
+  {
+    "section": 3,
+    "title": "Quando o viés foi medido",
+    "kicker": "Estudos de caso",
+    "kind": "coverSection",
+    "data": {
+      "number": "03",
+      "subtitle": "Evidências reais em sistemas de análise facial e avaliação de risco"
+    },
+    "note": "Introduzir os três casos: Gender Shades, relatório NIST e COMPAS. Informar que são tecnologias, amostras e períodos específicos — não números universais.",
+    "source": null
+  },
+  {
+    "section": 3,
+    "title": "Gender Shades (2018)",
+    "kicker": "Buolamwini e Gebru",
+    "kind": "facts",
+    "data": {
+      "big": "3",
+      "unit": "sistemas comerciais avaliados",
+      "detail": "O estudo comparou taxas de erro na classificação de gênero por tonalidade de pele e gênero.",
+      "tag": "Pesquisa publicada no PMLR"
+    },
+    "note": "Os autores estudaram 3 classificadores comerciais. Tratou-se de classificação de gênero em imagens, não de identificação de suspeitos. O recorte temporal importa.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "O contraste de erros",
+    "kicker": "Gender Shades • 2018",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Mulheres de pele escura",
+          34.7
+        ],
+        [
+          "Homens de pele clara",
+          0.8
+        ]
+      ],
+      "legend": "Maiores taxas de erro observadas nesses grupos entre os sistemas avaliados.",
+      "suffix": "%"
+    },
+    "note": "Os valores de até 34,7% e no máximo 0,8% correspondem a resultados dos sistemas avaliados em 2018; não expressam taxas atuais ou desempenho de todo reconhecimento facial.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "A amostra também importa",
+    "kicker": "Gender Shades • conjuntos de referência",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "IJB-A: pele clara",
+          79.6
+        ],
+        [
+          "Adience: pele clara",
+          86.2
+        ]
+      ],
+      "legend": "Proporção de indivíduos de pele mais clara em duas bases analisadas.",
+      "suffix": "%"
+    },
+    "note": "O estudo relatou predomínio de pessoas de pele clara em benchmarks existentes. Os autores criaram um conjunto mais balanceado para a auditoria. A composição dos dados influencia o que é possível testar.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "O que o estudo ensina?",
+    "kicker": "Interpretação",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Média insuficiente",
+          "Uma boa taxa agregada pode esconder resultados diferentes."
+        ],
+        [
+          "02",
+          "Subgrupos importam",
+          "Analisar interseções revela disparidades invisíveis em avaliações genéricas."
+        ],
+        [
+          "03",
+          "Auditoria revela",
+          "Uma avaliação independente pode evidenciar limites do sistema."
+        ]
+      ]
+    },
+    "note": "Ressalte a perspectiva interseccional: resultados por tonalidade de pele e gênero combinados. Evitar dizer que o estudo prova todos os tipos de racismo algorítmico.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "NIST: efeitos demográficos (2019)",
+    "kicker": "Reconhecimento facial",
+    "kind": "facts",
+    "data": {
+      "big": "2019",
+      "unit": "relatório técnico NIST IR 8280",
+      "detail": "O instituto encontrou diferenças demográficas de desempenho que variavam conforme algoritmo, tarefa e população.",
+      "tag": "Verificação 1:1 e identificação 1:N"
+    },
+    "note": "O NIST testou algoritmos de reconhecimento facial e observou variações demográficas, incluindo falsos positivos. A intensidade e direção dependiam dos sistemas e conjuntos utilizados.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+  },
+  {
+    "section": 3,
+    "title": "Quando um falso positivo tem custo",
+    "kicker": "Aplicação e risco",
+    "kind": "scenario",
+    "data": {
+      "label": "Possível associação incorreta",
+      "context": "Um sistema pode indicar que duas imagens são da mesma pessoa quando pertencem a pessoas diferentes.",
+      "outcome": "Em contextos sensíveis, esse erro exige confirmação independente e possibilidade de contestação."
+    },
+    "note": "Não afirmar que todo falso positivo resulta em prisão. O impacto depende da instituição e do processo que usa o sistema. O ponto é a responsabilidade por sistemas de alto risco.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+  },
+  {
+    "section": 3,
+    "title": "COMPAS: previsão de reincidência",
+    "kicker": "ProPublica • 2016",
+    "kind": "facts",
+    "data": {
+      "big": "2016",
+      "unit": "investigação jornalística",
+      "detail": "A ProPublica examinou um sistema de pontuação de risco usado no contexto criminal dos EUA.",
+      "tag": "Outro tipo de algoritmo, outro contexto"
+    },
+    "note": "Apresentar COMPAS como avaliação de risco. A investigação da ProPublica analisou resultados observados ao longo de dois anos e comparou erros entre grupos; existem disputas metodológicas sobre justiça preditiva.",
+    "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+  },
+  {
+    "section": 3,
+    "title": "Erros de alto risco no COMPAS",
+    "kicker": "ProPublica • análise de 2016",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Réus negros",
+          45
+        ],
+        [
+          "Réus brancos",
+          23
+        ]
+      ],
+      "legend": "Entre os que não reincidiram no período analisado, proporção classificada como maior risco.",
+      "suffix": "%"
+    },
+    "note": "A investigação encontrou aproximadamente 45% entre réus negros e 23% entre réus brancos para esse tipo de erro. São resultados de uma análise específica; não representar como estatística atual do sistema.",
+    "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+  },
+  {
+    "section": 3,
+    "title": "A controvérsia importa",
+    "kicker": "Debate sobre justiça algorítmica",
+    "kind": "split",
+    "data": {
+      "left": [
+        "ProPublica",
+        "Destacou disparidades raciais nas taxas de falsos positivos e falsos negativos."
+      ],
+      "right": [
+        "Contestação",
+        "A empresa responsável defendeu outros critérios de calibração e desempenho."
+      ],
+      "bottom": "Diferentes definições de “justiça” podem entrar em conflito."
+    },
+    "note": "Enfatizar que houve contestação e que comparar métricas exige contextualizar prevalências e critérios. A existência do debate não elimina as diferenças medidas nos tipos de erro.",
+    "source": "https://www.propublica.org/article/propublica-responds-to-companys-critique-of-machine-bias-story"
+  },
+  {
+    "section": 4,
+    "title": "Da evidência à responsabilidade",
+    "kicker": "O que fazer com isso?",
+    "kind": "coverSection",
+    "data": {
+      "number": "04",
+      "subtitle": "Auditoria, participação, transparência e decisões humanas"
+    },
+    "note": "Abrir o último bloco perguntando: se riscos podem ser medidos, o que equipes, instituições e sociedade devem fazer para enfrentá-los?",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "O problema não termina no código",
+    "kicker": "Responsabilidade distribuída",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Equipe",
+          "Desenvolve e testa"
+        ],
+        [
+          "Gestão",
+          "Define objetivos e recursos"
+        ],
+        [
+          "Instituição",
+          "Decide como usar"
+        ],
+        [
+          "Sociedade",
+          "Fiscaliza impactos"
+        ]
+      ]
+    },
+    "note": "Não culpar apenas o programador nem dizer que é exclusivamente problema dos dados. Decisões de projeto, compra, uso e supervisão se distribuem por atores diferentes.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Auditar é olhar além da média",
+    "kicker": "Medição de riscos",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Representação",
+          "Quem está no conjunto de dados?"
+        ],
+        [
+          "02",
+          "Desempenho",
+          "Como variam os erros por subgrupo?"
+        ],
+        [
+          "03",
+          "Consequências",
+          "Que danos cada erro pode causar?"
+        ],
+        [
+          "04",
+          "Mudança",
+          "O resultado se mantém após implantação?"
+        ]
+      ]
+    },
+    "note": "Fale de avaliação prévia e monitoramento contínuo. Uma base equilibrada não garante comportamento justo, mas melhora a capacidade de identificar problemas.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Documentar limites é parte do projeto",
+    "kicker": "Boas práticas em ADS",
+    "kind": "steps",
+    "data": {
+      "items": [
+        [
+          "README",
+          "Origem e tratamento dos dados"
+        ],
+        [
+          "Métricas",
+          "Acurácia, precisão, recall e erros por grupo"
+        ],
+        [
+          "Teste",
+          "Casos-limite e contexto real"
+        ],
+        [
+          "Revisão",
+          "Pessoa responsável e possibilidade de contestar"
+        ]
+      ],
+      "footer": "Transparência deve respeitar privacidade e proteção de dados."
+    },
+    "note": "Conectar com projetos acadêmicos: documentar o CSV, as métricas, as limitações e a validação. Explicar que dados sensíveis exigem cuidado legal e ético.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Diversidade nas equipes ajuda, mas não basta",
+    "kicker": "Participação",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Participação",
+        "Equipes e pessoas afetadas trazem perguntas e experiências diferentes.",
+        "Melhora o processo"
+      ],
+      "b": [
+        "Processos verificáveis",
+        "Auditorias, avaliações e regras de responsabilização limitam riscos.",
+        "Exige continuidade"
+      ]
+    },
+    "note": "Evitar promessa de que diversidade por si só resolve o problema. Precisa acompanhar o projeto, a governança e a revisão independente.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Quando não automatizar?",
+    "kicker": "Decisões sensíveis",
+    "kind": "question",
+    "data": {
+      "question": "Se não é possível explicar, contestar ou corrigir a decisão, esse sistema deveria decidir sozinho?",
+      "small": "A pergunta vale especialmente para saúde, justiça, segurança e oportunidades."
+    },
+    "note": "Trazer a discussão de proporcionalidade: em alguns contextos, supervisão humana e possibilidade de recurso são indispensáveis. A alternativa pode ser restringir ou não usar um sistema.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Uma orientação internacional",
+    "kicker": "UNESCO • 2021",
+    "kind": "statement",
+    "data": {
+      "main": "Sistemas de IA devem ser avaliados também pelos efeitos sobre direitos humanos, equidade, transparência e responsabilização.",
+      "detail": "A Recomendação sobre a Ética da Inteligência Artificial orienta políticas e práticas responsáveis."
+    },
+    "note": "A frase é uma síntese da diretriz, não citação textual. Explicar que a recomendação traz princípios e recomendações para Estados, instituições e atores do ecossistema de IA.",
+    "source": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+  },
+  {
+    "section": 4,
+    "title": "Vamos testar uma ideia",
+    "kicker": "Discussão com a turma",
+    "kind": "scenario",
+    "data": {
+      "label": "Seleção automatizada de currículos",
+      "context": "A empresa remove a coluna “raça” e anuncia que seu sistema ficou justo.",
+      "outcome": "Pergunta: que testes e informações ainda seriam necessários antes de confiar nele?"
+    },
+    "note": "Esperar respostas sobre proxies, representatividade, explicabilidade, indicadores por grupos, processo de recurso e efeito real das decisões. Esta dinâmica é hipotética.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Três ideias para levar",
+    "kicker": "Conclusão",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "História",
+          "A computação faz parte de relações sociais e de poder."
+        ],
+        [
+          "02",
+          "Evidência",
+          "Disparidades podem aparecer nos dados, modelos e usos."
+        ],
+        [
+          "03",
+          "Responsabilidade",
+          "Precisamos testar, documentar, contestar e corrigir."
+        ]
+      ]
+    },
+    "note": "Fechar com síntese das quatro partes e retomar a pergunta inicial. A tecnologia pode ser transformada por escolhas de pesquisa, engenharia e governança.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Obrigado!",
+    "kicker": "Pergunta final",
+    "kind": "question",
+    "data": {
+      "question": "Para quem essa tecnologia funciona — e quem pode ficar de fora?",
+      "small": "Referências e leituras complementares na próxima tela."
+    },
+    "note": "Agradecer à turma. Usar a pergunta para discutir, sem precisar ler um parágrafo final. Se o tempo terminar, ir para bibliografia.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Referências e leituras",
+    "kicker": "Fontes principais",
+    "kind": "refs",
+    "data": {
+      "items": [
+        [
+          "Sueli Carneiro — tese (2005)",
+          "https://repositorio.usp.br/item/001465832"
+        ],
+        [
+          "Tarcízio Silva — Racismo algorítmico (2022)",
+          "https://www.sescsp.org.br/editorial/racismo-algoritmico-inteligencia-artificial-e-discriminacao-nas-redes-digitais/"
+        ],
+        [
+          "Safiya Noble — Algorithms of Oppression (2018)",
+          "https://nyupress.org/9781479837243/algorithms-of-oppression/"
+        ],
+        [
+          "Buolamwini & Gebru — Gender Shades (2018)",
+          "https://proceedings.mlr.press/v81/buolamwini18a.html"
+        ],
+        [
+          "NIST — Demographic Effects (2019)",
+          "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+        ],
+        [
+          "ProPublica — Machine Bias (2016)",
+          "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+        ],
+        [
+          "UNESCO — Ethics of AI (2021)",
+          "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        ]
+      ]
+    },
+    "note": "Slide extra para consulta; não precisa contar no tempo de exposição. Mostrar que os estudos têm datas e metodologias específicas.",
+    "source": null
+  }
+]</script><script>
+const slides=JSON.parse(document.getElementById('slideData').textContent);const $=id=>document.getElementById(id);let current=0,notesShown=false,overviewShown=false;
+const escapeHtml=t=>String(t).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+function content(s){const d=s.data;let h='';switch(s.kind){
+case 'cover':return `<div class="kicker-pill">História • Computação • Sociedade</div><h1>${escapeHtml(s.title)}</h1><p class="cover-sub">${escapeHtml(d.subtitle)}</p><div class="cover-line">${escapeHtml(d.line)}</div>`;
+case 'coverSection':return `<div class="bigFact"><div class="factStat"><strong>${escapeHtml(d.number)}</strong><span>Parte do seminário</span></div><div class="factText"><p>${escapeHtml(d.subtitle)}</p></div></div>`;
+case 'question':return `<div class="questionBox"><strong>${escapeHtml(d.question)}</strong><div class="smallNote">${escapeHtml(d.small)}</div></div>`;
+case 'cards':return `<div class="cards" style="--cols:${d.items.length===4?4:3}">${d.items.map(x=>`<div class="card"><div class="num">${escapeHtml(x[0])}</div><h2>${escapeHtml(x[1])}</h2><p>${escapeHtml(x[2])}</p></div>`).join('')}</div>`;
+case 'timeline':return `<div class="timeline">${d.items.map(x=>`<div class="timeBlock"><div class="time">${escapeHtml(x[0])}</div><h3>${escapeHtml(x[1])}</h3><p>${escapeHtml(x[2])}</p></div>`).join('')}</div>`;
+case 'split':return `<div class="split"><div class="side"><h3>${escapeHtml(d.left[0])}</h3><p>${escapeHtml(d.left[1])}</p></div><div class="side"><h3>${escapeHtml(d.right[0])}</h3><p>${escapeHtml(d.right[1])}</p></div></div><div class="under">${escapeHtml(d.bottom)}</div>`;
+case 'definition':return `<div class="definition"><div class="defBig"><strong>${escapeHtml(d.term)}</strong><p>${escapeHtml(d.definition)}</p></div><div class="defExamples">${d.examples.map(x=>`<p>↗ ${escapeHtml(x)}</p>`).join('')}</div></div>`;
+case 'statement':return `<div class="statement"><strong>${escapeHtml(d.main)}</strong><p>${escapeHtml(d.detail)}</p></div>`;
+case 'flow':return `<div class="flow">${d.steps.map((x,i)=>`${i?'<span class="arrow">→</span>':''}<div class="flowStep"><h3>${escapeHtml(x[0])}</h3><p>${escapeHtml(x[1])}</p></div>`).join('')}</div>`;
+case 'comparison':return `<div class="compare">${[d.a,d.b].map(x=>`<div class="comp"><div><h3>${escapeHtml(x[0])}</h3><p>${escapeHtml(x[1])}</p></div><small>${escapeHtml(x[2])}</small></div>`).join('')}</div>`;
+case 'steps':return `<div class="steps">${d.items.map(x=>`<div class="step"><span>${escapeHtml(x[0])}</span><h3>${escapeHtml(x[1])}</h3><p>${escapeHtml(x[2])}</p></div>`).join('')}</div>${d.footer?`<div class="stepsFooter">${escapeHtml(d.footer)}</div>`:''}`;
+case 'scenario':return `<div class="scenario"><div class="scenarioLabel"><small>Exemplo / situação</small><strong>${escapeHtml(d.label)}</strong></div><div class="scenarioBody"><p>${escapeHtml(d.context)}</p><p>${escapeHtml(d.outcome)}</p></div></div>`;
+case 'bars':return `<div class="barPlot">${d.items.map(x=>`<div class="barLine"><div class="barLabel">${escapeHtml(x[0])}</div><div class="barTrack"><div class="barFill" style="width:${Math.max(0,Math.min(100,x[1]))}%"></div></div><div class="barNum">${String(x[1]).replace('.',',')}${escapeHtml(d.suffix)}</div></div>`).join('')}</div><div class="barLegend">${escapeHtml(d.legend)}</div>`;
+case 'matrix':return `<div class="matrix">${d.items.map(x=>`<div class="matrixCell"><b>${escapeHtml(x[0])}</b><p>${escapeHtml(x[1])}</p></div>`).join('')}</div>`;
+case 'facts':return `<div class="bigFact"><div class="factStat"><strong>${escapeHtml(d.big)}</strong><span>${escapeHtml(d.unit)}</span></div><div class="factText"><p>${escapeHtml(d.detail)}</p><b>${escapeHtml(d.tag)}</b></div></div>`;
+case 'refs':return `<div class="refs">${d.items.map(x=>`<a href="${escapeHtml(x[1])}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(x[0])}</a>`).join('')}</div>`;
+}return h}
+function markup(s,i){return `<div class="meta"><span>PARTE ${s.section} · ${escapeHtml(s.kicker)}</span><span>INTEGRANTE ${s.section}</span></div>${s.kind==='cover'?'':`<h1>${escapeHtml(s.title)}</h1>`}<div class="visual">${content(s)}</div>${s.source?`<div class="source">Fonte: <a href="${escapeHtml(s.source)}" target="_blank" rel="noopener noreferrer">consultar estudo original ↗</a> · dados históricos/contextualizados</div>`:''}<div class="footer"><span>Racismo epistêmico & computação</span><span class="small">${i+1} / ${slides.length}${i===slides.length-1?' · leitura complementar':''}</span></div>`}
+function render(){const s=slides[current];$('slide').className=`slide section${s.section} ${s.kind==='cover'?'cover':''}`;$('slide').innerHTML=markup(s,current);$('noteText').textContent=s.note;$('notes').classList.toggle('show',notesShown&&!overviewShown);$('meter').style.width=(100*(current+1)/slides.length)+'%';$('pager').textContent=`${current+1} / ${slides.length}`;$('speaker').textContent=`Integrante ${s.section}${current===40?' · bibliografia':''}`;$('prevBtn').disabled=current===0;$('nextBtn').textContent=current===slides.length-1?'Voltar ao início ↺':'Próximo →';history.replaceState(null,'',`#slide-${current+1}`)}
+function go(n){current=(n+slides.length)%slides.length;overviewShown=false;$('app').classList.remove('overviewMode');render()}
+function overview(){overviewShown=!overviewShown;$('app').classList.toggle('overviewMode',overviewShown);if(overviewShown){$('overview').innerHTML=slides.map((s,i)=>`<button data-to="${i}"><small>${String(i+1).padStart(2,'0')} · INTEGRANTE ${s.section}</small><strong>${escapeHtml(s.title)}</strong></button>`).join('');$('overview').querySelectorAll('button').forEach(b=>b.onclick=()=>go(Number(b.dataset.to)))}}
+$('prevBtn').onclick=()=>go(current-1);$('nextBtn').onclick=()=>go(current+1);$('overviewBtn').onclick=overview;$('notesBtn').onclick=()=>{notesShown=!notesShown;render()};$('fullBtn').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.();$('printBtn').onclick=()=>{const all=document.createElement('div');all.id='printAll';all.innerHTML=slides.map((s,i)=>`<div class="slide section${s.section} ${s.kind==='cover'?'cover':''}">${markup(s,i)}</div>`).join('');document.body.append(all);const style=document.createElement('style');style.id='printCSS';style.textContent='@media screen{#printAll{display:none}}@media print{#app{display:none!important}#printAll{display:block!important}}';document.head.append(style);window.print();setTimeout(()=>{all.remove();style.remove()},1000)};
+document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(current+1)}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(current-1)}else if(e.key.toLowerCase()==='o')overview();else if(e.key.toLowerCase()==='n'){notesShown=!notesShown;render()}else if(e.key.toLowerCase()==='f')$('fullBtn').click();else if(e.key==='Home')go(0);else if(e.key==='End')go(slides.length-1);else if(e.key==='Escape'&&overviewShown)overview()});const m=location.hash.match(/slide-(\d+)/);if(m)current=Math.max(0,Math.min(slides.length-1,Number(m[1])-1));render();
+</script></body></html>

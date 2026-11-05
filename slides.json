@@ -1,0 +1,826 @@
+[
+  {
+    "section": 1,
+    "title": "Racismo epistêmico e computação",
+    "kicker": "Seminário • história, sociedade e tecnologia",
+    "kind": "cover",
+    "data": {
+      "subtitle": "Como escolhas humanas e desigualdades históricas podem aparecer nos sistemas digitais",
+      "line": "4 integrantes · 40–50 minutos"
+    },
+    "note": "Abrir questionando a ideia de que tecnologia seria neutra. Apresentar o recorte: produção do conhecimento, funcionamento dos algoritmos, evidências de discriminação e responsabilidades.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Uma pergunta para começar",
+    "kicker": "O problema central",
+    "kind": "question",
+    "data": {
+      "question": "Se um algoritmo aprende com o mundo, ele também pode aprender os preconceitos desse mundo?",
+      "small": "A pergunta guiará os quatro blocos da apresentação."
+    },
+    "note": "Não responder imediatamente. Peça que a turma pense em exemplos como sistemas de contratação, reconhecimento facial e concessão de crédito.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "O que queremos demonstrar",
+    "kicker": "Objetivos",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Entender o contexto",
+          "A computação se desenvolve em sociedades com conflitos, desigualdades e disputas por poder."
+        ],
+        [
+          "02",
+          "Investigar os mecanismos",
+          "Dados, escolhas de projeto e avaliações podem produzir resultados desiguais."
+        ],
+        [
+          "03",
+          "Analisar evidências",
+          "Casos documentados ajudam a verificar quando isso acontece."
+        ]
+      ]
+    },
+    "note": "Explicar o recorte. Não pretende dizer que todo algoritmo é racista; pretende analisar mecanismos pelos quais discriminação pode ocorrer e como identificá-los.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "A história da computação não é neutra",
+    "kicker": "Contexto histórico",
+    "kind": "timeline",
+    "data": {
+      "items": [
+        [
+          "1940–70",
+          "Computação institucional",
+          "Pesquisa militar, universidades, governos e grandes empresas."
+        ],
+        [
+          "1980–2000",
+          "Computadores e internet",
+          "Expansão do acesso, mas com desigualdades de infraestrutura."
+        ],
+        [
+          "2010–hoje",
+          "Dados e IA",
+          "Classificações e recomendações passam a mediar decisões cotidianas."
+        ]
+      ]
+    },
+    "note": "Cada etapa foi viabilizada por investimentos, contextos políticos e instituições. Evite tratar a linha do tempo como evolução automática ou igual para todas as populações.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Quem produz o conhecimento?",
+    "kicker": "Perspectiva histórica",
+    "kind": "split",
+    "data": {
+      "left": [
+        "Uma questão técnica",
+        "Quais problemas, dados e métricas entram nos sistemas?"
+      ],
+      "right": [
+        "Uma questão social",
+        "Quais pessoas participam das decisões e quais experiências são desconsideradas?"
+      ],
+      "bottom": "As escolhas tecnológicas também refletem prioridades institucionais."
+    },
+    "note": "Mostre que a pergunta sobre autoria do conhecimento não significa rejeitar a ciência. Significa investigar critérios, acesso, recursos e reconhecimento.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "O que é racismo epistêmico?",
+    "kicker": "Conceito",
+    "kind": "definition",
+    "data": {
+      "term": "Racismo epistêmico",
+      "definition": "Desvalorização, exclusão ou hierarquização racializada de pessoas e de formas de produzir conhecimento.",
+      "examples": [
+        "Quem é reconhecido como especialista?",
+        "Quais vivências são consideradas evidência?",
+        "Que perguntas sequer chegam a ser pesquisadas?"
+      ]
+    },
+    "note": "Apresente como um conceito sobre produção e legitimação do conhecimento. Ocorre quando relações raciais influenciam quem pode falar com autoridade e quais saberes são levados a sério.",
+    "source": "https://repositorio.usp.br/item/001465832"
+  },
+  {
+    "section": 1,
+    "title": "Epistemicídio: apagamento dos saberes",
+    "kicker": "Sueli Carneiro",
+    "kind": "statement",
+    "data": {
+      "main": "Não é apenas impedir alguém de participar. É também desqualificar o conhecimento que essa pessoa ou grupo produz.",
+      "detail": "A discussão sobre epistemicídio ajuda a analisar mecanismos de deslegitimação de sujeitos e saberes."
+    },
+    "note": "Mencionar Sueli Carneiro e sua tese de 2005. A formulação no slide é uma paráfrase explicativa, não uma citação literal da autora.",
+    "source": "https://repositorio.usp.br/item/001465832"
+  },
+  {
+    "section": 1,
+    "title": "Da universidade ao software",
+    "kicker": "Onde os conceitos se encontram",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Pesquisa",
+          "Quais problemas são escolhidos?"
+        ],
+        [
+          "Dados",
+          "Quem aparece nos registros?"
+        ],
+        [
+          "Projeto",
+          "Quem define as categorias?"
+        ],
+        [
+          "Avaliação",
+          "Para quem o sistema funciona?"
+        ]
+      ]
+    },
+    "note": "Demonstre a passagem entre questões epistemológicas e engenharia: o conhecimento considerado válido influencia a coleta de dados, os requisitos e as avaliações.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "Exemplo: um conjunto de fotos",
+    "kicker": "Situação hipotética",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Base pouco diversa",
+        "A maioria dos rostos tem características semelhantes.",
+        "Cobertura limitada"
+      ],
+      "b": [
+        "Base avaliada por subgrupos",
+        "Desempenho analisado em populações diversas.",
+        "Limites mais visíveis"
+      ]
+    },
+    "note": "Este é um exemplo didático e hipotético. Não é uma afirmação de que diversidade de dados sozinha elimina discriminação, pois modelo, objetivo e contexto também importam.",
+    "source": null
+  },
+  {
+    "section": 1,
+    "title": "A ponte para os algoritmos",
+    "kicker": "Síntese do bloco 1",
+    "kind": "statement",
+    "data": {
+      "main": "Se alguns grupos participam menos da definição do problema, seus contextos podem também ser pouco considerados na solução.",
+      "detail": "Agora vamos observar como isso aparece tecnicamente em sistemas computacionais."
+    },
+    "note": "Encerrar o primeiro bloco estabelecendo uma hipótese de investigação, não uma regra universal. Passar a fala para quem explicará dados, modelos e vieses.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O que um algoritmo realmente faz?",
+    "kicker": "Fundamentos",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Entrada",
+          "Dados do mundo"
+        ],
+        [
+          "Regras ou modelo",
+          "Processamento"
+        ],
+        [
+          "Saída",
+          "Classificação ou pontuação"
+        ],
+        [
+          "Uso",
+          "Decisão humana ou automática"
+        ]
+      ]
+    },
+    "note": "Explicar algoritmo sem transformar em sinônimo de inteligência artificial. Alguns usam regras fixas, outros modelos treinados. O risco social depende também da decisão tomada a partir da saída.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Como um modelo aprende",
+    "kicker": "Aprendizado de máquina",
+    "kind": "steps",
+    "data": {
+      "items": [
+        [
+          "1",
+          "Treinar",
+          "O modelo ajusta padrões a partir de exemplos."
+        ],
+        [
+          "2",
+          "Validar",
+          "Medimos seu desempenho em dados separados."
+        ],
+        [
+          "3",
+          "Aplicar",
+          "O modelo recebe novos casos e gera previsões."
+        ]
+      ],
+      "footer": "Aprender padrões não significa compreender justiça ou contexto social."
+    },
+    "note": "Use um classificador de imagens como exemplo. Explique que a máquina não recebe automaticamente o contexto histórico dos dados e que desempenho fora do treinamento precisa ser verificado.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O que chamamos de viés?",
+    "kicker": "Conceito técnico e social",
+    "kind": "split",
+    "data": {
+      "left": [
+        "Viés estatístico",
+        "Erro sistemático, amostragem inadequada ou diferença persistente de desempenho."
+      ],
+      "right": [
+        "Viés social",
+        "Padrões de desigualdade que podem ser aprendidos e reforçados pelos sistemas."
+      ],
+      "bottom": "Os conceitos se relacionam, mas não são idênticos."
+    },
+    "note": "Diferenciar o termo técnico do uso social. Um modelo pode ser estatisticamente preciso em média e ainda apresentar danos desproporcionais a determinados grupos.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Quatro pontos em que o viés entra",
+    "kicker": "Ciclo de desenvolvimento",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Coleta",
+          "Amostra não representa bem quem será afetado."
+        ],
+        [
+          "02",
+          "Rótulos",
+          "Categorias ou decisões passadas carregam desigualdades."
+        ],
+        [
+          "03",
+          "Objetivo",
+          "A métrica otimizada ignora custos de erros para grupos."
+        ],
+        [
+          "04",
+          "Implantação",
+          "O contexto real difere do ambiente de teste."
+        ]
+      ]
+    },
+    "note": "Aponte que não existe uma única etapa culpada. Corrigir a base pode ajudar, mas também é preciso rever a pergunta, as métricas, o produto e seu uso.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Dados históricos carregam história",
+    "kicker": "Exemplo hipotético",
+    "kind": "scenario",
+    "data": {
+      "label": "Sistema para selecionar currículos",
+      "context": "Se decisões anteriores foram desiguais, os dados de contratação podem reproduzir essa desigualdade.",
+      "outcome": "O modelo pode aprender padrões do passado sem receber a ordem explícita de discriminar."
+    },
+    "note": "Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Remover “raça” resolve?",
+    "kicker": "Variáveis indiretas",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Sem variável explícita",
+        "A coluna “raça” é retirada da tabela.",
+        "Não é garantia"
+      ],
+      "b": [
+        "Outras correlações",
+        "CEP, escola ou histórico podem se relacionar a desigualdades sociais.",
+        "Auditoria necessária"
+      ]
+    },
+    "note": "Não afirmar que todo CEP é necessariamente discriminatório. Explique o conceito de proxy: uma variável pode carregar informação correlacionada a atributos protegidos.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Acurácia média pode enganar",
+    "kicker": "Uma comparação ilustrativa",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Grupo A",
+          95
+        ],
+        [
+          "Grupo B",
+          70
+        ]
+      ],
+      "legend": "Exemplo fictício: mesmo modelo, taxas de acerto diferentes por grupo.",
+      "suffix": "%"
+    },
+    "note": "Explique a diferença entre acurácia agregada e desempenho por subgrupo. Estes números são inventados para fins didáticos e não pertencem a uma pesquisa.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O erro também tem tipos",
+    "kicker": "Matriz de confusão",
+    "kind": "matrix",
+    "data": {
+      "items": [
+        [
+          "Verdadeiro positivo",
+          "Acertou ao indicar presença"
+        ],
+        [
+          "Falso positivo",
+          "Indicou presença quando não havia"
+        ],
+        [
+          "Falso negativo",
+          "Não detectou quando havia"
+        ],
+        [
+          "Verdadeiro negativo",
+          "Acertou ao indicar ausência"
+        ]
+      ]
+    },
+    "note": "Dê exemplo de identificação facial: falso positivo pode associar duas pessoas diferentes. Distinguir do falso negativo, quando o sistema deixa de reconhecer a mesma pessoa.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "Reconhecer um rosto ≠ classificar gênero",
+    "kicker": "Diferenças importantes",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Classificação de gênero",
+        "Infere uma categoria a partir de uma imagem.",
+        "Tarefa de classificação"
+      ],
+      "b": [
+        "Reconhecimento facial",
+        "Verifica ou procura identidade a partir de uma face.",
+        "Tarefa de identificação"
+      ]
+    },
+    "note": "Essa distinção é fundamental para interpretar corretamente os estudos que aparecerão. Gender Shades mede classificação de gênero por imagem; NIST examina reconhecimento facial.",
+    "source": null
+  },
+  {
+    "section": 2,
+    "title": "O teste precisa refletir o uso real",
+    "kicker": "Síntese do bloco 2",
+    "kind": "statement",
+    "data": {
+      "main": "Não basta perguntar “quantas vezes o modelo acerta?”. É preciso perguntar “onde ele erra, para quem e com qual consequência?”.",
+      "detail": "Vamos comparar essa questão com pesquisas e casos documentados."
+    },
+    "note": "Preparar o próximo integrante para apresentar evidências. Reforce que uma divergência de métricas requer interpretação, não conclusões automáticas.",
+    "source": null
+  },
+  {
+    "section": 3,
+    "title": "Quando o viés foi medido",
+    "kicker": "Estudos de caso",
+    "kind": "coverSection",
+    "data": {
+      "number": "03",
+      "subtitle": "Evidências reais em sistemas de análise facial e avaliação de risco"
+    },
+    "note": "Introduzir os três casos: Gender Shades, relatório NIST e COMPAS. Informar que são tecnologias, amostras e períodos específicos — não números universais.",
+    "source": null
+  },
+  {
+    "section": 3,
+    "title": "Gender Shades (2018)",
+    "kicker": "Buolamwini e Gebru",
+    "kind": "facts",
+    "data": {
+      "big": "3",
+      "unit": "sistemas comerciais avaliados",
+      "detail": "O estudo comparou taxas de erro na classificação de gênero por tonalidade de pele e gênero.",
+      "tag": "Pesquisa publicada no PMLR"
+    },
+    "note": "Os autores estudaram 3 classificadores comerciais. Tratou-se de classificação de gênero em imagens, não de identificação de suspeitos. O recorte temporal importa.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "O contraste de erros",
+    "kicker": "Gender Shades • 2018",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Mulheres de pele escura",
+          34.7
+        ],
+        [
+          "Homens de pele clara",
+          0.8
+        ]
+      ],
+      "legend": "Maiores taxas de erro observadas nesses grupos entre os sistemas avaliados.",
+      "suffix": "%"
+    },
+    "note": "Os valores de até 34,7% e no máximo 0,8% correspondem a resultados dos sistemas avaliados em 2018; não expressam taxas atuais ou desempenho de todo reconhecimento facial.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "A amostra também importa",
+    "kicker": "Gender Shades • conjuntos de referência",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "IJB-A: pele clara",
+          79.6
+        ],
+        [
+          "Adience: pele clara",
+          86.2
+        ]
+      ],
+      "legend": "Proporção de indivíduos de pele mais clara em duas bases analisadas.",
+      "suffix": "%"
+    },
+    "note": "O estudo relatou predomínio de pessoas de pele clara em benchmarks existentes. Os autores criaram um conjunto mais balanceado para a auditoria. A composição dos dados influencia o que é possível testar.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "O que o estudo ensina?",
+    "kicker": "Interpretação",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Média insuficiente",
+          "Uma boa taxa agregada pode esconder resultados diferentes."
+        ],
+        [
+          "02",
+          "Subgrupos importam",
+          "Analisar interseções revela disparidades invisíveis em avaliações genéricas."
+        ],
+        [
+          "03",
+          "Auditoria revela",
+          "Uma avaliação independente pode evidenciar limites do sistema."
+        ]
+      ]
+    },
+    "note": "Ressalte a perspectiva interseccional: resultados por tonalidade de pele e gênero combinados. Evitar dizer que o estudo prova todos os tipos de racismo algorítmico.",
+    "source": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+  },
+  {
+    "section": 3,
+    "title": "NIST: efeitos demográficos (2019)",
+    "kicker": "Reconhecimento facial",
+    "kind": "facts",
+    "data": {
+      "big": "2019",
+      "unit": "relatório técnico NIST IR 8280",
+      "detail": "O instituto encontrou diferenças demográficas de desempenho que variavam conforme algoritmo, tarefa e população.",
+      "tag": "Verificação 1:1 e identificação 1:N"
+    },
+    "note": "O NIST testou algoritmos de reconhecimento facial e observou variações demográficas, incluindo falsos positivos. A intensidade e direção dependiam dos sistemas e conjuntos utilizados.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+  },
+  {
+    "section": 3,
+    "title": "Quando um falso positivo tem custo",
+    "kicker": "Aplicação e risco",
+    "kind": "scenario",
+    "data": {
+      "label": "Possível associação incorreta",
+      "context": "Um sistema pode indicar que duas imagens são da mesma pessoa quando pertencem a pessoas diferentes.",
+      "outcome": "Em contextos sensíveis, esse erro exige confirmação independente e possibilidade de contestação."
+    },
+    "note": "Não afirmar que todo falso positivo resulta em prisão. O impacto depende da instituição e do processo que usa o sistema. O ponto é a responsabilidade por sistemas de alto risco.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+  },
+  {
+    "section": 3,
+    "title": "COMPAS: previsão de reincidência",
+    "kicker": "ProPublica • 2016",
+    "kind": "facts",
+    "data": {
+      "big": "2016",
+      "unit": "investigação jornalística",
+      "detail": "A ProPublica examinou um sistema de pontuação de risco usado no contexto criminal dos EUA.",
+      "tag": "Outro tipo de algoritmo, outro contexto"
+    },
+    "note": "Apresentar COMPAS como avaliação de risco. A investigação da ProPublica analisou resultados observados ao longo de dois anos e comparou erros entre grupos; existem disputas metodológicas sobre justiça preditiva.",
+    "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+  },
+  {
+    "section": 3,
+    "title": "Erros de alto risco no COMPAS",
+    "kicker": "ProPublica • análise de 2016",
+    "kind": "bars",
+    "data": {
+      "items": [
+        [
+          "Réus negros",
+          45
+        ],
+        [
+          "Réus brancos",
+          23
+        ]
+      ],
+      "legend": "Entre os que não reincidiram no período analisado, proporção classificada como maior risco.",
+      "suffix": "%"
+    },
+    "note": "A investigação encontrou aproximadamente 45% entre réus negros e 23% entre réus brancos para esse tipo de erro. São resultados de uma análise específica; não representar como estatística atual do sistema.",
+    "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+  },
+  {
+    "section": 3,
+    "title": "A controvérsia importa",
+    "kicker": "Debate sobre justiça algorítmica",
+    "kind": "split",
+    "data": {
+      "left": [
+        "ProPublica",
+        "Destacou disparidades raciais nas taxas de falsos positivos e falsos negativos."
+      ],
+      "right": [
+        "Contestação",
+        "A empresa responsável defendeu outros critérios de calibração e desempenho."
+      ],
+      "bottom": "Diferentes definições de “justiça” podem entrar em conflito."
+    },
+    "note": "Enfatizar que houve contestação e que comparar métricas exige contextualizar prevalências e critérios. A existência do debate não elimina as diferenças medidas nos tipos de erro.",
+    "source": "https://www.propublica.org/article/propublica-responds-to-companys-critique-of-machine-bias-story"
+  },
+  {
+    "section": 4,
+    "title": "Da evidência à responsabilidade",
+    "kicker": "O que fazer com isso?",
+    "kind": "coverSection",
+    "data": {
+      "number": "04",
+      "subtitle": "Auditoria, participação, transparência e decisões humanas"
+    },
+    "note": "Abrir o último bloco perguntando: se riscos podem ser medidos, o que equipes, instituições e sociedade devem fazer para enfrentá-los?",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "O problema não termina no código",
+    "kicker": "Responsabilidade distribuída",
+    "kind": "flow",
+    "data": {
+      "steps": [
+        [
+          "Equipe",
+          "Desenvolve e testa"
+        ],
+        [
+          "Gestão",
+          "Define objetivos e recursos"
+        ],
+        [
+          "Instituição",
+          "Decide como usar"
+        ],
+        [
+          "Sociedade",
+          "Fiscaliza impactos"
+        ]
+      ]
+    },
+    "note": "Não culpar apenas o programador nem dizer que é exclusivamente problema dos dados. Decisões de projeto, compra, uso e supervisão se distribuem por atores diferentes.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Auditar é olhar além da média",
+    "kicker": "Medição de riscos",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "Representação",
+          "Quem está no conjunto de dados?"
+        ],
+        [
+          "02",
+          "Desempenho",
+          "Como variam os erros por subgrupo?"
+        ],
+        [
+          "03",
+          "Consequências",
+          "Que danos cada erro pode causar?"
+        ],
+        [
+          "04",
+          "Mudança",
+          "O resultado se mantém após implantação?"
+        ]
+      ]
+    },
+    "note": "Fale de avaliação prévia e monitoramento contínuo. Uma base equilibrada não garante comportamento justo, mas melhora a capacidade de identificar problemas.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Documentar limites é parte do projeto",
+    "kicker": "Boas práticas em ADS",
+    "kind": "steps",
+    "data": {
+      "items": [
+        [
+          "README",
+          "Origem e tratamento dos dados"
+        ],
+        [
+          "Métricas",
+          "Acurácia, precisão, recall e erros por grupo"
+        ],
+        [
+          "Teste",
+          "Casos-limite e contexto real"
+        ],
+        [
+          "Revisão",
+          "Pessoa responsável e possibilidade de contestar"
+        ]
+      ],
+      "footer": "Transparência deve respeitar privacidade e proteção de dados."
+    },
+    "note": "Conectar com projetos acadêmicos: documentar o CSV, as métricas, as limitações e a validação. Explicar que dados sensíveis exigem cuidado legal e ético.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Diversidade nas equipes ajuda, mas não basta",
+    "kicker": "Participação",
+    "kind": "comparison",
+    "data": {
+      "a": [
+        "Participação",
+        "Equipes e pessoas afetadas trazem perguntas e experiências diferentes.",
+        "Melhora o processo"
+      ],
+      "b": [
+        "Processos verificáveis",
+        "Auditorias, avaliações e regras de responsabilização limitam riscos.",
+        "Exige continuidade"
+      ]
+    },
+    "note": "Evitar promessa de que diversidade por si só resolve o problema. Precisa acompanhar o projeto, a governança e a revisão independente.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Quando não automatizar?",
+    "kicker": "Decisões sensíveis",
+    "kind": "question",
+    "data": {
+      "question": "Se não é possível explicar, contestar ou corrigir a decisão, esse sistema deveria decidir sozinho?",
+      "small": "A pergunta vale especialmente para saúde, justiça, segurança e oportunidades."
+    },
+    "note": "Trazer a discussão de proporcionalidade: em alguns contextos, supervisão humana e possibilidade de recurso são indispensáveis. A alternativa pode ser restringir ou não usar um sistema.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Uma orientação internacional",
+    "kicker": "UNESCO • 2021",
+    "kind": "statement",
+    "data": {
+      "main": "Sistemas de IA devem ser avaliados também pelos efeitos sobre direitos humanos, equidade, transparência e responsabilização.",
+      "detail": "A Recomendação sobre a Ética da Inteligência Artificial orienta políticas e práticas responsáveis."
+    },
+    "note": "A frase é uma síntese da diretriz, não citação textual. Explicar que a recomendação traz princípios e recomendações para Estados, instituições e atores do ecossistema de IA.",
+    "source": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+  },
+  {
+    "section": 4,
+    "title": "Vamos testar uma ideia",
+    "kicker": "Discussão com a turma",
+    "kind": "scenario",
+    "data": {
+      "label": "Seleção automatizada de currículos",
+      "context": "A empresa remove a coluna “raça” e anuncia que seu sistema ficou justo.",
+      "outcome": "Pergunta: que testes e informações ainda seriam necessários antes de confiar nele?"
+    },
+    "note": "Esperar respostas sobre proxies, representatividade, explicabilidade, indicadores por grupos, processo de recurso e efeito real das decisões. Esta dinâmica é hipotética.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Três ideias para levar",
+    "kicker": "Conclusão",
+    "kind": "cards",
+    "data": {
+      "items": [
+        [
+          "01",
+          "História",
+          "A computação faz parte de relações sociais e de poder."
+        ],
+        [
+          "02",
+          "Evidência",
+          "Disparidades podem aparecer nos dados, modelos e usos."
+        ],
+        [
+          "03",
+          "Responsabilidade",
+          "Precisamos testar, documentar, contestar e corrigir."
+        ]
+      ]
+    },
+    "note": "Fechar com síntese das quatro partes e retomar a pergunta inicial. A tecnologia pode ser transformada por escolhas de pesquisa, engenharia e governança.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Obrigado!",
+    "kicker": "Pergunta final",
+    "kind": "question",
+    "data": {
+      "question": "Para quem essa tecnologia funciona — e quem pode ficar de fora?",
+      "small": "Referências e leituras complementares na próxima tela."
+    },
+    "note": "Agradecer à turma. Usar a pergunta para discutir, sem precisar ler um parágrafo final. Se o tempo terminar, ir para bibliografia.",
+    "source": null
+  },
+  {
+    "section": 4,
+    "title": "Referências e leituras",
+    "kicker": "Fontes principais",
+    "kind": "refs",
+    "data": {
+      "items": [
+        [
+          "Sueli Carneiro — tese (2005)",
+          "https://repositorio.usp.br/item/001465832"
+        ],
+        [
+          "Tarcízio Silva — Racismo algorítmico (2022)",
+          "https://www.sescsp.org.br/editorial/racismo-algoritmico-inteligencia-artificial-e-discriminacao-nas-redes-digitais/"
+        ],
+        [
+          "Safiya Noble — Algorithms of Oppression (2018)",
+          "https://nyupress.org/9781479837243/algorithms-of-oppression/"
+        ],
+        [
+          "Buolamwini & Gebru — Gender Shades (2018)",
+          "https://proceedings.mlr.press/v81/buolamwini18a.html"
+        ],
+        [
+          "NIST — Demographic Effects (2019)",
+          "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf"
+        ],
+        [
+          "ProPublica — Machine Bias (2016)",
+          "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+        ],
+        [
+          "UNESCO — Ethics of AI (2021)",
+          "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        ]
+      ]
+    },
+    "note": "Slide extra para consulta; não precisa contar no tempo de exposição. Mostrar que os estudos têm datas e metodologias específicas.",
+    "source": null
+  }
+]
