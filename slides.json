@@ -700,19 +700,23 @@
       "items": [
         [
           "README",
-          "Origem e tratamento dos dados"
+          "Origem e tratamento dos dados",
+          "Registrar de onde os dados vieram, como foram coletados, limpos e transformados."
         ],
         [
           "Métricas",
-          "Acurácia, precisão, recall e erros por grupo"
+          "Acurácia, precisão, recall e erros por grupo",
+          "Não avaliar só a média geral: comparar o desempenho entre grupos também é essencial."
         ],
         [
           "Teste",
-          "Casos-limite e contexto real"
+          "Casos-limite e contexto real",
+          "Testar situações críticas, falhas possíveis e efeitos do sistema no uso concreto."
         ],
         [
           "Revisão",
-          "Pessoa responsável e possibilidade de contestar"
+          "Pessoa responsável e possibilidade de contestar",
+          "Definir supervisão humana e caminhos para revisar decisões automatizadas."
         ]
       ],
       "footer": "Transparência deve respeitar privacidade e proteção de dados."
