@@ -6,7 +6,7 @@
     "kind": "cover",
     "data": {
       "subtitle": "Como escolhas humanas e desigualdades históricas podem aparecer nos sistemas digitais",
-      "line": "4 integrantes · 40–50 minutos"
+      "line": ""
     },
     "note": "ANDREY — Abertura (~45 s). Apresente o título e a questão central: sistemas computacionais não surgem fora da sociedade. O grupo investigará de que forma escolhas humanas, desigualdades históricas e instituições interferem na tecnologia. Não afirme que toda IA é racista: o objetivo é entender quando e por que injustiças podem aparecer. Diga que os próximos blocos apresentarão mecanismos técnicos e pesquisas empíricas.",
     "source": null,
@@ -19,7 +19,7 @@
     "kind": "question",
     "data": {
       "question": "Se um algoritmo aprende com o mundo, ele também pode aprender os preconceitos desse mundo?",
-      "small": "A pergunta guiará os quatro blocos da apresentação."
+      "small": "A ideia não é afirmar que toda tecnologia discrimina, mas perguntar em que condições isso pode acontecer e como identificar o problema."
     },
     "note": "ANDREY — Pergunta inicial (~45 s). Leia apenas a pergunta central e dê alguns segundos para a turma pensar. Um algoritmo de seleção aprende a partir de registros de contratações; se esses registros refletem exclusões históricas, o padrão aprendido pode reproduzi-las. É uma possibilidade, não uma conclusão sobre todo sistema. Convide a turma a lembrar de mecanismos de indicação, crédito ou reconhecimento facial.",
     "source": null,
@@ -35,17 +35,17 @@
         [
           "01",
           "Entender o contexto",
-          "A computação se desenvolve em sociedades com conflitos, desigualdades e disputas por poder."
+          "Mostrar que a computação não surge isolada: ela é desenvolvida em sociedades marcadas por conflitos, desigualdades e disputas de poder."
         ],
         [
           "02",
           "Investigar os mecanismos",
-          "Dados, escolhas de projeto e avaliações podem produzir resultados desiguais."
+          "Explicar como dados, escolhas de projeto, critérios de avaliação e instituições podem gerar resultados desiguais."
         ],
         [
           "03",
           "Analisar evidências",
-          "Casos documentados ajudam a verificar quando isso acontece."
+          "Observar estudos e casos documentados para verificar quando esses problemas aparecem e quais impactos produzem."
         ]
       ]
     },
@@ -63,17 +63,17 @@
         [
           "1940–70",
           "Computação institucional",
-          "Pesquisa militar, universidades, governos e grandes empresas."
+          "A computação moderna cresce ligada a universidades, governos, indústria e pesquisa militar, mostrando que tecnologia e poder sempre caminharam juntos."
         ],
         [
           "1980–2000",
           "Computadores e internet",
-          "Expansão do acesso, mas com desigualdades de infraestrutura."
+          "O acesso se amplia com computadores pessoais e internet, mas continua marcado por diferenças de renda, infraestrutura e oportunidades educacionais."
         ],
         [
           "2010–hoje",
           "Dados e IA",
-          "Classificações e recomendações passam a mediar decisões cotidianas."
+          "Sistemas baseados em dados passam a mediar decisões do cotidiano, como recomendação, vigilância, seleção, crédito e reconhecimento."
         ]
       ]
     },
@@ -89,13 +89,13 @@
     "data": {
       "left": [
         "Uma questão técnica",
-        "Quais problemas, dados e métricas entram nos sistemas?"
+        "Quais problemas serão resolvidos? Quais dados entram no sistema? Quais métricas e critérios definirão se ele “funciona”?"
       ],
       "right": [
         "Uma questão social",
-        "Quais pessoas participam das decisões e quais experiências são desconsideradas?"
+        "Quem participa dessas decisões? Quais grupos são ouvidos? Quais experiências são ignoradas ou tratadas como menos importantes?"
       ],
-      "bottom": "As escolhas tecnológicas também refletem prioridades institucionais."
+      "bottom": "Produzir tecnologia também é definir prioridades: por isso, conhecimento e poder estão conectados."
     },
     "note": "ANDREY — Quem constrói o saber? (~65 s). Mostre as duas colunas: decisões técnicas e sociais acontecem juntas. Na escolha de uma métrica, por exemplo, alguém decide o que conta como um acerto e quais erros importam. Uma equipe pode não representar todas as pessoas afetadas. A pergunta não é desacreditar a ciência, mas examinar como se definem prioridades, critérios de evidência e autoridade.",
     "source": null,
@@ -108,11 +108,11 @@
     "kind": "definition",
     "data": {
       "term": "Racismo epistêmico",
-      "definition": "Desvalorização, exclusão ou hierarquização racializada de pessoas e de formas de produzir conhecimento.",
+      "definition": "É a desvalorização, exclusão ou hierarquização racializada de pessoas e modos de produzir conhecimento, influenciando quem é reconhecido como autoridade e quais saberes são legitimados.",
       "examples": [
-        "Quem é reconhecido como especialista?",
-        "Quais vivências são consideradas evidência?",
-        "Que perguntas sequer chegam a ser pesquisadas?"
+        "Quem costuma ser reconhecido como especialista ou fonte confiável?",
+        "Quais experiências e vivências são aceitas como evidência legítima?",
+        "Quais problemas são pesquisados — e quais nem chegam a virar pauta?"
       ]
     },
     "note": "ANDREY — Conceito de racismo epistêmico (~90 s). Explique epistemologia como estudo do conhecimento: como ele é produzido, validado e reconhecido. Racismo epistêmico envolve hierarquização racializada de pessoas e saberes, quando experiências e conhecimentos de certos grupos recebem menos legitimidade. Use as três perguntas do slide, uma por vez. Exemplo ilustrativo: discutir um produto digital sem ouvir usuários diretamente afetados por discriminações pode ocultar problemas relevantes. Cite a discussão de Sueli Carneiro como ponte para o slide seguinte.",
@@ -125,8 +125,8 @@
     "kicker": "Sueli Carneiro",
     "kind": "statement",
     "data": {
-      "main": "Não é apenas impedir alguém de participar. É também desqualificar o conhecimento que essa pessoa ou grupo produz.",
-      "detail": "A discussão sobre epistemicídio ajuda a analisar mecanismos de deslegitimação de sujeitos e saberes."
+      "main": "Epistemicídio é o apagamento ou a deslegitimação de saberes. No Brasil, essa discussão foi desenvolvida por Sueli Carneiro — filósofa, escritora e importante intelectual do movimento negro brasileiro.",
+      "detail": "A ideia ajuda a entender que o problema não é apenas excluir pessoas de espaços acadêmicos e tecnológicos, mas também desqualificar os conhecimentos que elas produzem."
     },
     "note": "ANDREY — Epistemicídio (~75 s). Apresente o termo como mecanismo de desqualificação ou supressão de sujeitos e saberes, e mencione a tese de Sueli Carneiro (2005). Diferencie 'não participar da equipe' de 'participar, mas ter suas experiências tratadas como irrelevantes'. Não use a frase do slide como citação literal: é uma explicação resumida. Relacione a questão ao reconhecimento acadêmico e à definição do que merece ser pesquisado.",
     "source": "https://repositorio.usp.br/item/001465832",
@@ -141,19 +141,19 @@
       "steps": [
         [
           "Pesquisa",
-          "Quais problemas são escolhidos?"
+          "Quais problemas recebem atenção, financiamento e prioridade?"
         ],
         [
           "Dados",
-          "Quem aparece nos registros?"
+          "Quem aparece nos registros e quem fica ausente ou mal representado?"
         ],
         [
           "Projeto",
-          "Quem define as categorias?"
+          "Quem define categorias, rótulos e o que será considerado correto?"
         ],
         [
           "Avaliação",
-          "Para quem o sistema funciona?"
+          "O sistema é testado para públicos diferentes ou apenas em média?"
         ]
       ]
     },
@@ -169,13 +169,13 @@
     "data": {
       "a": [
         "Base pouco diversa",
-        "A maioria dos rostos tem características semelhantes.",
+        "Se a maioria das imagens tiver características muito semelhantes, o sistema pode aprender pouco sobre outros grupos e esconder diferenças de desempenho.",
         "Cobertura limitada"
       ],
       "b": [
-        "Base avaliada por subgrupos",
-        "Desempenho analisado em populações diversas.",
-        "Limites mais visíveis"
+        "Base analisada por subgrupos",
+        "Quando o desempenho é comparado entre grupos diferentes, fica mais fácil identificar limites, erros recorrentes e desigualdades.",
+        "Avaliação mais crítica"
       ]
     },
     "note": "ANDREY — Exemplo hipotético de fotos (~75 s). Sinalize explicitamente que o exemplo não é um experimento nem um resultado publicado. Se o treinamento concentra características semelhantes, é preciso investigar se o desempenho varia em outras populações; isso depende também do modelo, iluminação, qualidade da imagem e tarefa. A análise por subgrupos permite identificar diferenças que uma média geral poderia esconder. O estudo Gender Shades aparecerá no bloco de casos reais.",
@@ -188,8 +188,8 @@
     "kicker": "Síntese do bloco 1",
     "kind": "statement",
     "data": {
-      "main": "Se alguns grupos participam menos da definição do problema, seus contextos podem também ser pouco considerados na solução.",
-      "detail": "Agora vamos observar como isso aparece tecnicamente em sistemas computacionais."
+      "main": "Se certos grupos participam menos da definição dos problemas e critérios, suas necessidades podem aparecer menos na solução tecnológica — e isso pode abrir espaço para vieses algorítmicos.",
+      "detail": "Com essa base, o próximo bloco mostrará como dados, modelos e métricas podem transformar essas escolhas em resultados concretos."
     },
     "note": "ANDREY — Transição (~60 s). Retome a relação central: a exclusão na definição do problema pode deixar necessidades e riscos invisíveis. Isso não significa que um caso de racismo epistêmico automaticamente cause racismo algorítmico; a relação exige observar dados, projeto, resultados e contexto. Encerre dizendo: 'Agora vamos entender como essas escolhas podem virar vieses dentro dos sistemas computacionais.' Passe a fala ao Integrante 2.",
     "source": null,
@@ -220,9 +220,9 @@
         ]
       ]
     },
-    "note": "Explicar algoritmo sem transformar em sinônimo de inteligência artificial. Alguns usam regras fixas, outros modelos treinados. O risco social depende também da decisão tomada a partir da saída.",
+    "note": "PEDRO — Explicar algoritmo sem transformar em sinônimo de inteligência artificial. Alguns usam regras fixas, outros modelos treinados. O risco social depende também da decisão tomada a partir da saída.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -249,9 +249,9 @@
       ],
       "footer": "Aprender padrões não significa compreender justiça ou contexto social."
     },
-    "note": "Use um classificador de imagens como exemplo. Explique que a máquina não recebe automaticamente o contexto histórico dos dados e que desempenho fora do treinamento precisa ser verificado.",
+    "note": "PEDRO — Use um classificador de imagens como exemplo. Explique que a máquina não recebe automaticamente o contexto histórico dos dados e que desempenho fora do treinamento precisa ser verificado.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -269,9 +269,9 @@
       ],
       "bottom": "Os conceitos se relacionam, mas não são idênticos."
     },
-    "note": "Diferenciar o termo técnico do uso social. Um modelo pode ser estatisticamente preciso em média e ainda apresentar danos desproporcionais a determinados grupos.",
+    "note": "PEDRO — Diferenciar o termo técnico do uso social. Um modelo pode ser estatisticamente preciso em média e ainda apresentar danos desproporcionais a determinados grupos.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -302,9 +302,9 @@
         ]
       ]
     },
-    "note": "Aponte que não existe uma única etapa culpada. Corrigir a base pode ajudar, mas também é preciso rever a pergunta, as métricas, o produto e seu uso.",
+    "note": "PEDRO — Aponte que não existe uma única etapa culpada. Corrigir a base pode ajudar, mas também é preciso rever a pergunta, as métricas, o produto e seu uso.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -316,9 +316,9 @@
       "context": "Se decisões anteriores foram desiguais, os dados de contratação podem reproduzir essa desigualdade.",
       "outcome": "O modelo pode aprender padrões do passado sem receber a ordem explícita de discriminar."
     },
-    "note": "Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas.",
+    "note": "PEDRO — Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -337,9 +337,9 @@
         "Auditoria necessária"
       ]
     },
-    "note": "Não afirmar que todo CEP é necessariamente discriminatório. Explique o conceito de proxy: uma variável pode carregar informação correlacionada a atributos protegidos.",
+    "note": "PEDRO — Não afirmar que todo CEP é necessariamente discriminatório. Explique o conceito de proxy: uma variável pode carregar informação correlacionada a atributos protegidos.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -360,9 +360,9 @@
       "legend": "Exemplo fictício: mesmo modelo, taxas de acerto diferentes por grupo.",
       "suffix": "%"
     },
-    "note": "Explique a diferença entre acurácia agregada e desempenho por subgrupo. Estes números são inventados para fins didáticos e não pertencem a uma pesquisa.",
+    "note": "PEDRO — Explique a diferença entre acurácia agregada e desempenho por subgrupo. Estes números são inventados para fins didáticos e não pertencem a uma pesquisa.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -389,9 +389,9 @@
         ]
       ]
     },
-    "note": "Dê exemplo de identificação facial: falso positivo pode associar duas pessoas diferentes. Distinguir do falso negativo, quando o sistema deixa de reconhecer a mesma pessoa.",
+    "note": "PEDRO — Dê exemplo de identificação facial: falso positivo pode associar duas pessoas diferentes. Distinguir do falso negativo, quando o sistema deixa de reconhecer a mesma pessoa.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -410,9 +410,9 @@
         "Tarefa de identificação"
       ]
     },
-    "note": "Essa distinção é fundamental para interpretar corretamente os estudos que aparecerão. Gender Shades mede classificação de gênero por imagem; NIST examina reconhecimento facial.",
+    "note": "PEDRO — Essa distinção é fundamental para interpretar corretamente os estudos que aparecerão. Gender Shades mede classificação de gênero por imagem; NIST examina reconhecimento facial.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 2,
@@ -423,9 +423,9 @@
       "main": "Não basta perguntar “quantas vezes o modelo acerta?”. É preciso perguntar “onde ele erra, para quem e com qual consequência?”.",
       "detail": "Vamos comparar essa questão com pesquisas e casos documentados."
     },
-    "note": "Preparar o próximo integrante para apresentar evidências. Reforce que uma divergência de métricas requer interpretação, não conclusões automáticas.",
+    "note": "PEDRO — Preparar o próximo integrante para apresentar evidências. Reforce que uma divergência de métricas requer interpretação, não conclusões automáticas.",
     "source": null,
-    "presenter": "Integrante 2"
+    "presenter": "Pedro"
   },
   {
     "section": 3,
@@ -436,9 +436,9 @@
       "number": "03",
       "subtitle": "Evidências reais em sistemas de análise facial e avaliação de risco"
     },
-    "note": "Introduzir os três casos: Gender Shades, relatório NIST e COMPAS. Informar que são tecnologias, amostras e períodos específicos — não números universais.",
+    "note": "LUCAS — Introduzir os três casos: Gender Shades, relatório NIST e COMPAS. Informar que são tecnologias, amostras e períodos específicos — não números universais.",
     "source": null,
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -451,9 +451,9 @@
       "detail": "O estudo comparou taxas de erro na classificação de gênero por tonalidade de pele e gênero.",
       "tag": "Pesquisa publicada no PMLR"
     },
-    "note": "Os autores estudaram 3 classificadores comerciais. Tratou-se de classificação de gênero em imagens, não de identificação de suspeitos. O recorte temporal importa.",
+    "note": "LUCAS — Os autores estudaram 3 classificadores comerciais. Tratou-se de classificação de gênero em imagens, não de identificação de suspeitos. O recorte temporal importa.",
     "source": "https://proceedings.mlr.press/v81/buolamwini18a.html",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -474,9 +474,9 @@
       "legend": "Maiores taxas de erro observadas nesses grupos entre os sistemas avaliados.",
       "suffix": "%"
     },
-    "note": "Os valores de até 34,7% e no máximo 0,8% correspondem a resultados dos sistemas avaliados em 2018; não expressam taxas atuais ou desempenho de todo reconhecimento facial.",
+    "note": "LUCAS — Os valores de até 34,7% e no máximo 0,8% correspondem a resultados dos sistemas avaliados em 2018; não expressam taxas atuais ou desempenho de todo reconhecimento facial.",
     "source": "https://proceedings.mlr.press/v81/buolamwini18a.html",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -497,9 +497,9 @@
       "legend": "Proporção de indivíduos de pele mais clara em duas bases analisadas.",
       "suffix": "%"
     },
-    "note": "O estudo relatou predomínio de pessoas de pele clara em benchmarks existentes. Os autores criaram um conjunto mais balanceado para a auditoria. A composição dos dados influencia o que é possível testar.",
+    "note": "LUCAS — O estudo relatou predomínio de pessoas de pele clara em benchmarks existentes. Os autores criaram um conjunto mais balanceado para a auditoria. A composição dos dados influencia o que é possível testar.",
     "source": "https://proceedings.mlr.press/v81/buolamwini18a.html",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -525,9 +525,9 @@
         ]
       ]
     },
-    "note": "Ressalte a perspectiva interseccional: resultados por tonalidade de pele e gênero combinados. Evitar dizer que o estudo prova todos os tipos de racismo algorítmico.",
+    "note": "LUCAS — Ressalte a perspectiva interseccional: resultados por tonalidade de pele e gênero combinados. Evitar dizer que o estudo prova todos os tipos de racismo algorítmico.",
     "source": "https://proceedings.mlr.press/v81/buolamwini18a.html",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -540,9 +540,9 @@
       "detail": "O instituto encontrou diferenças demográficas de desempenho que variavam conforme algoritmo, tarefa e população.",
       "tag": "Verificação 1:1 e identificação 1:N"
     },
-    "note": "O NIST testou algoritmos de reconhecimento facial e observou variações demográficas, incluindo falsos positivos. A intensidade e direção dependiam dos sistemas e conjuntos utilizados.",
+    "note": "LUCAS — O NIST testou algoritmos de reconhecimento facial e observou variações demográficas, incluindo falsos positivos. A intensidade e direção dependiam dos sistemas e conjuntos utilizados.",
     "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -554,9 +554,9 @@
       "context": "Um sistema pode indicar que duas imagens são da mesma pessoa quando pertencem a pessoas diferentes.",
       "outcome": "Em contextos sensíveis, esse erro exige confirmação independente e possibilidade de contestação."
     },
-    "note": "Não afirmar que todo falso positivo resulta em prisão. O impacto depende da instituição e do processo que usa o sistema. O ponto é a responsabilidade por sistemas de alto risco.",
+    "note": "LUCAS — Não afirmar que todo falso positivo resulta em prisão. O impacto depende da instituição e do processo que usa o sistema. O ponto é a responsabilidade por sistemas de alto risco.",
     "source": "https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -569,9 +569,9 @@
       "detail": "A ProPublica examinou um sistema de pontuação de risco usado no contexto criminal dos EUA.",
       "tag": "Outro tipo de algoritmo, outro contexto"
     },
-    "note": "Apresentar COMPAS como avaliação de risco. A investigação da ProPublica analisou resultados observados ao longo de dois anos e comparou erros entre grupos; existem disputas metodológicas sobre justiça preditiva.",
+    "note": "LUCAS — Apresentar COMPAS como avaliação de risco. A investigação da ProPublica analisou resultados observados ao longo de dois anos e comparou erros entre grupos; existem disputas metodológicas sobre justiça preditiva.",
     "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -592,9 +592,9 @@
       "legend": "Entre os que não reincidiram no período analisado, proporção classificada como maior risco.",
       "suffix": "%"
     },
-    "note": "A investigação encontrou aproximadamente 45% entre réus negros e 23% entre réus brancos para esse tipo de erro. São resultados de uma análise específica; não representar como estatística atual do sistema.",
+    "note": "LUCAS — A investigação encontrou aproximadamente 45% entre réus negros e 23% entre réus brancos para esse tipo de erro. São resultados de uma análise específica; não representar como estatística atual do sistema.",
     "source": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 3,
@@ -612,9 +612,9 @@
       ],
       "bottom": "Diferentes definições de “justiça” podem entrar em conflito."
     },
-    "note": "Enfatizar que houve contestação e que comparar métricas exige contextualizar prevalências e critérios. A existência do debate não elimina as diferenças medidas nos tipos de erro.",
+    "note": "LUCAS — Enfatizar que houve contestação e que comparar métricas exige contextualizar prevalências e critérios. A existência do debate não elimina as diferenças medidas nos tipos de erro.",
     "source": "https://www.propublica.org/article/propublica-responds-to-companys-critique-of-machine-bias-story",
-    "presenter": "Integrante 3"
+    "presenter": "Lucas"
   },
   {
     "section": 4,
@@ -625,7 +625,7 @@
       "number": "04",
       "subtitle": "Auditoria, participação, transparência e decisões humanas"
     },
-    "note": "Abrir o último bloco perguntando: se riscos podem ser medidos, o que equipes, instituições e sociedade devem fazer para enfrentá-los?",
+    "note": "JOÃO PEDRO — Abrir o último bloco perguntando: se riscos podem ser medidos, o que equipes, instituições e sociedade devem fazer para enfrentá-los?",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -654,7 +654,7 @@
         ]
       ]
     },
-    "note": "Não culpar apenas o programador nem dizer que é exclusivamente problema dos dados. Decisões de projeto, compra, uso e supervisão se distribuem por atores diferentes.",
+    "note": "JOÃO PEDRO — Não culpar apenas o programador nem dizer que é exclusivamente problema dos dados. Decisões de projeto, compra, uso e supervisão se distribuem por atores diferentes.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -687,7 +687,7 @@
         ]
       ]
     },
-    "note": "Fale de avaliação prévia e monitoramento contínuo. Uma base equilibrada não garante comportamento justo, mas melhora a capacidade de identificar problemas.",
+    "note": "JOÃO PEDRO — Fale de avaliação prévia e monitoramento contínuo. Uma base equilibrada não garante comportamento justo, mas melhora a capacidade de identificar problemas.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -717,7 +717,7 @@
       ],
       "footer": "Transparência deve respeitar privacidade e proteção de dados."
     },
-    "note": "Conectar com projetos acadêmicos: documentar o CSV, as métricas, as limitações e a validação. Explicar que dados sensíveis exigem cuidado legal e ético.",
+    "note": "JOÃO PEDRO — Conectar com projetos acadêmicos: documentar o CSV, as métricas, as limitações e a validação. Explicar que dados sensíveis exigem cuidado legal e ético.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -738,7 +738,7 @@
         "Exige continuidade"
       ]
     },
-    "note": "Evitar promessa de que diversidade por si só resolve o problema. Precisa acompanhar o projeto, a governança e a revisão independente.",
+    "note": "JOÃO PEDRO — Evitar promessa de que diversidade por si só resolve o problema. Precisa acompanhar o projeto, a governança e a revisão independente.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -751,7 +751,7 @@
       "question": "Se não é possível explicar, contestar ou corrigir a decisão, esse sistema deveria decidir sozinho?",
       "small": "A pergunta vale especialmente para saúde, justiça, segurança e oportunidades."
     },
-    "note": "Trazer a discussão de proporcionalidade: em alguns contextos, supervisão humana e possibilidade de recurso são indispensáveis. A alternativa pode ser restringir ou não usar um sistema.",
+    "note": "JOÃO PEDRO — Trazer a discussão de proporcionalidade: em alguns contextos, supervisão humana e possibilidade de recurso são indispensáveis. A alternativa pode ser restringir ou não usar um sistema.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -764,7 +764,7 @@
       "main": "Sistemas de IA devem ser avaliados também pelos efeitos sobre direitos humanos, equidade, transparência e responsabilização.",
       "detail": "A Recomendação sobre a Ética da Inteligência Artificial orienta políticas e práticas responsáveis."
     },
-    "note": "A frase é uma síntese da diretriz, não citação textual. Explicar que a recomendação traz princípios e recomendações para Estados, instituições e atores do ecossistema de IA.",
+    "note": "JOÃO PEDRO — A frase é uma síntese da diretriz, não citação textual. Explicar que a recomendação traz princípios e recomendações para Estados, instituições e atores do ecossistema de IA.",
     "source": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
     "presenter": "João Pedro"
   },
@@ -778,7 +778,7 @@
       "context": "A empresa remove a coluna “raça” e anuncia que seu sistema ficou justo.",
       "outcome": "Pergunta: que testes e informações ainda seriam necessários antes de confiar nele?"
     },
-    "note": "Esperar respostas sobre proxies, representatividade, explicabilidade, indicadores por grupos, processo de recurso e efeito real das decisões. Esta dinâmica é hipotética.",
+    "note": "JOÃO PEDRO — Esperar respostas sobre proxies, representatividade, explicabilidade, indicadores por grupos, processo de recurso e efeito real das decisões. Esta dinâmica é hipotética.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -806,7 +806,7 @@
         ]
       ]
     },
-    "note": "Fechar com síntese das quatro partes e retomar a pergunta inicial. A tecnologia pode ser transformada por escolhas de pesquisa, engenharia e governança.",
+    "note": "JOÃO PEDRO — Fechar com síntese das quatro partes e retomar a pergunta inicial. A tecnologia pode ser transformada por escolhas de pesquisa, engenharia e governança.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -819,7 +819,7 @@
       "question": "Para quem essa tecnologia funciona — e quem pode ficar de fora?",
       "small": "Referências e leituras complementares na próxima tela."
     },
-    "note": "Agradecer à turma. Usar a pergunta para discutir, sem precisar ler um parágrafo final. Se o tempo terminar, ir para bibliografia.",
+    "note": "JOÃO PEDRO — Agradecer à turma. Usar a pergunta para discutir, sem precisar ler um parágrafo final. Se o tempo terminar, ir para bibliografia.",
     "source": null,
     "presenter": "João Pedro"
   },
@@ -860,7 +860,7 @@
         ]
       ]
     },
-    "note": "Slide extra para consulta; não precisa contar no tempo de exposição. Mostrar que os estudos têm datas e metodologias específicas.",
+    "note": "JOÃO PEDRO — Slide extra para consulta; não precisa contar no tempo de exposição. Mostrar que os estudos têm datas e metodologias específicas.",
     "source": null,
     "presenter": "João Pedro"
   }
