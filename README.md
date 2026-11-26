@@ -30,4 +30,4 @@ Os textos e notas estão no elemento `script#slideData` de `index.html`, em JSON
 
 ## Organização dos apresentadores
 
-A atribuição dos slides é exibida **somente nas notas do apresentador**, não no slide projetado: slides 1–10: **Andrey**; 11–20: **Integrante 2**; 21–30: **Integrante 3**; 31–40: **João Pedro**; slide 41: referências (João Pedro). Os primeiros dez slides têm notas ampliadas para apoiar a apresentação do Andrey.
+A atribuição dos slides é exibida **somente nas notas do apresentador**, não no slide projetado: slides 1–10: **Andrey**; 11–20: **Pedro**; 21–30: **Lucas**; 31–40: **João Pedro**; slide 41: referências (João Pedro). Os primeiros dez slides têm notas ampliadas para apoiar a apresentação do Andrey.
