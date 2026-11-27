@@ -309,14 +309,14 @@
   {
     "section": 2,
     "title": "Dados históricos carregam história",
-    "kicker": "Exemplo hipotético",
+    "kicker": "Exemplo hipotético e caso real",
     "kind": "scenario",
     "data": {
       "label": "Sistema para selecionar currículos",
       "context": "Se decisões anteriores foram desiguais, os dados de contratação podem reproduzir essa desigualdade.",
-      "outcome": "O modelo pode aprender padrões do passado sem receber a ordem explícita de discriminar."
+      "outcome": "O modelo pode aprender padrões do passado sem receber a ordem explícita de discriminar.", "real": {"tag": "Caso real · Amazon, 2018", "text": "Segundo a Reuters, uma ferramenta experimental rebaixava currículos com a palavra “women’s” (“feminino”). É um caso de viés de gênero.", "note": "A Amazon afirma que os recrutadores nunca a usaram para avaliar candidatos.", "url": "https://www.euronews.com/business/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women"}
     },
-    "note": "PEDRO — Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas.",
+    "note": "PEDRO — Deixe claro que o caso é hipotético. Evite alegar que todo recrutamento automatizado segue esse mecanismo. Explique como um rótulo do passado pode incorporar decisões humanas. Depois apresente o caso real da Amazon (Reuters, 2018): é viés de gênero, não de raça. A empresa afirma que os recrutadores nunca usaram a ferramenta para avaliar candidatos. A imagem do currículo é só uma ilustração.",
     "source": null,
     "presenter": "Pedro"
   },
